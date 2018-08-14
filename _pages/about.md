@@ -8,12 +8,4 @@ redirect_from:
   - /about.html
 ---
 
-
-A data-driven personal website
-======
-
-Featured publications
-======
-
-Personal
-------
+Welcome! This is me!
