@@ -83,7 +83,7 @@ author:
   avatar           : "profile.png"
   bio              : "Sr. Computer Vision Scientist at nVidia"
   location         : "Location"
-  employer         :
+  employer         : NVIDIA
   googlescholar    : "https://scholar.google.com.au/citations?user=Rfj56F4AAAAJ&hl=en"
   email            :
   uri              :
@@ -105,7 +105,7 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "https://twitter.com/trung_t_pham"
+  twitter          : "trung_t_pham"
   vine             :
   weibo            :
   xing             :
