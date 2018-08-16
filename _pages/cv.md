@@ -11,20 +11,20 @@ redirect_from:
 
 Education
 ======
-* B.S. in Mathematic and Computer Sciene, VNU, Vietnam, 2007
+* B.S. in Mathematics and Computer Sciene, HCMC University of Science, Vietnam, 2007
 * M.S. in Electrical and Computer Engineering, Chonnam National University, South Korea, 2010
 * Ph.D in Computer Vision, The University of Adelaide, Australia 2014
 
 Work experience
 ======
 * Sr. Computer Vision Scientist, Nvidia, June 2018 - present
-* Postdoctoral Research Fellow, The Australian Centre of Robotic Vision (ACRV) Sep. 2014 – May 2018
+* Postdoctoral Research Fellow, The Australian Centre of Robotic Vision (ACRV), Sep. 2014 – May 2018
   * Supervisor: Professor Ian Reid
   * Research areas: Semantic Vision, Semantic SLAM
-* Software Engineer Intern, Google Aug. 2013 – Nov. 2013
+* Software Engineer Intern, Google, Aug. 2013 – Nov. 2013
   * Supervisor: Ben Appleton
   * Project: Efficient placement algorithm for Google global storage system
-* Research Assistant, Chonnam National University Mar. 2008 – Feb. 2010
+* Research Assistant, Chonnam National University, Mar. 2008 – Feb. 2010
   * Supervisor: Professor Jin Young Kim
   * Project: Audio-visual speech recognition in mobile environments
 * Software Engineer, Global Cybersoft Inc. Vietnam
