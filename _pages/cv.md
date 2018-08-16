@@ -11,30 +11,23 @@ redirect_from:
 
 Education
 ======
-* B.S. in Github, Github University, 2012
-* M.S. in Jekyll, Github University, 2014
-* Ph.D in Version Control Theory, Github University, 2018 (expected)
+* B.S. in Mathematic and Computer Sciene, VNU, Vietnam, 2007
+* M.S. in Electrical and Computer Engineering, Chonnam National University, South Korea, 2010
+* Ph.D in Computer Vision, The University of Adelaide, Australia 2014
 
 Work experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Sr. Computer Vision Scientist, Nvidia, June 2018 - present
+* Postdoctoral Research Fellow, The Australian Centre of Robotic Vision (ACRV) Sep. 2014 – May 2018
+  * Supervisor: Professor Ian Reid
+  * Research areas: Semantic Vision, Semantic SLAM
+* Software Engineer Intern, Google Aug. 2013 – Nov. 2013
+  * Supervisor: Ben Appleton
+  * Project: Efficient placement algorithm for Google global storage system
+* Research Assistant, Chonnam National University Mar. 2008 – Feb. 2010
+  * Supervisor: Professor Jin Young Kim
+  * Project: Audio-visual speech recognition in mobile environments
+* Software Engineer, Global Cybersoft Inc. Vietnam
 
 Publications
 ======
@@ -54,6 +47,20 @@ Teaching
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Service and leadership
+Reviewers
 ======
-* Currently signed in to 43 different slack teams
+* IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)
+* IEEE Transactions on Image Processing (TIP)
+* IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)
+* Journal of Image and Vision Computing (IVC)
+* Computer Vision and Image Understanding (CVIU)
+* International Journal of Robotics Research (IJRR)
+* Journal of Unmanned Vehicle Systems (JUVS)
+* IEEE Robotics and Automation Letters (RAL)
+* IEEE Conference on Computer Vision and Pattern Recognition (CVPR) (2017-2018)
+* International Conference on Computer Vision (ICCV) (2015)
+* European Conference on Computer Vision (ECCV) 2018
+* IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) (2017)
+* BRITISH MACHINE VISION CONFERENCE (BMVC) (2018)
+* IEEE Winter Conf. on Applications of Computer Vision (WACV) (2019)
+* Asian Conference on Computer Vision (ACCV) (2018)
