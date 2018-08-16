@@ -29,6 +29,19 @@ Work experience
   * Project: Audio-visual speech recognition in mobile environments
 * Software Engineer, Global Cybersoft Inc. Vietnam
 
+Awards
+=====
+* 2017 1st place in the Amazon Robotic Challenge 2017 (won by the ACRV team)
+* 2016 Best Centre Citizen Awarded by The Australian Centre of Robotic Vision
+* 2016 6th place in the Amazon Picking Challenge 2016 (won by the ACRV team)
+* 2014 Dean’s Commendation of Doctoral Thesis Excellence
+* 2013 One of 200 young researchers worldwide invited to attend Heidelberg Laureate Forum 2013
+* 2012 Google Travel Grant
+* 2012 Google PhD Fellowship in Computer Vision
+* 2011 Google Travel Award for NIPS11
+* 2010 Adelaide Scholarships International (ASI) (2010-2014)
+* 2008 Brain Korea 21 Scholarship (2008-2009)
+
 Publications
 ======
   <ul>{% for post in site.publications %}
