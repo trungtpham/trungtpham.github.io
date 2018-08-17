@@ -12,6 +12,7 @@ You can also find my articles on <u><a href="{{author.googlescholar}}">my Google
 -->
       
 2018
+=====
 
 K. Li, **T. Pham**, H. Zhan, I. Reid  
 Efficient Dense Point Cloud Object Reconstruction using Deformation Vector Fields  
@@ -47,6 +48,7 @@ Cartman: The low-cost Cartesian Manipulator that won the Amazon Robotics Challen
 ICRA 2018
 
 2017
+=====
 
 T. Tran, **T. T. Pham**, G. Carneiro, L. Palmer, I. Reid  
 A Bayesian Data Augmentation Approach for Learning Deep Models  
@@ -65,6 +67,7 @@ The ACRV Picking Benchmark (APB): A Robotic Shelf Picking Benchmark to Foster Re
 ICRA 2017
 
 2016
+=====
 
 **T. T. Pham**, M. Eich, I. Reid and G. Wyeth  
 Geometrically Consistent Plane Extraction for Dense Indoor 3D Maps Segmentation  
@@ -75,6 +78,7 @@ Efficient Point Process Inference for Large-scale Object Detection
 CVPR 2016
 
 2015
+=====
 
 **T. T. Pham**, I. Reid, S. Gould, Y. Latif  
 Hierarchical Higher-order Regression Forest Fields: An Application to 3D Indoor Scene Labelling  
@@ -85,6 +89,7 @@ The k-support norm and convex envelopes of cardinality and rank
 In Computer Vision and Pattern Recognition (CVPR), 2015
 
 2014
+=====
 
 **T. T. Pham**  
 Robust Parameter Estimation in Computer Vision: Optimisation Methods and Applications  
@@ -99,12 +104,14 @@ The Random Cluster Model for Robust Geometric Fitting
 IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI) 2013
 
 2012
+=====
 
 **T. T. Pham**, T.-J. Chin, J. Yu and D. Suter  
 The Random Cluster Model for Robust Geometric Fitting  
 In CVPR 2012, Providence, Rhode Island, USA.
 
 2011
+=====
 
 **T. T. Pham**, T.-J. Chin, J. Yu and D. Suter  
 Simultaneous Sampling and Multi-Structure Fitting with Adaptive Reversible Jump MCMC  
