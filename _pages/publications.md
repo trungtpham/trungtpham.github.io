@@ -1,3 +1,4 @@
+<!--
 ---
 layout: archive
 title: "Publications"
@@ -6,8 +7,9 @@ author_profile: true
 ---
 
 {% if author.googlescholar %}
-{% endif %}
 You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
+{% endif %}
+-->
 
 2018
 
