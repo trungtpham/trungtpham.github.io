@@ -8,6 +8,7 @@ author_profile: true
 {% if author.googlescholar %}
 {% endif %}
 You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
+
 2018
 
 K. Li, **T. Pham**, H. Zhan, I. Reid\
