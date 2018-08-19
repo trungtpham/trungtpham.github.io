@@ -50,7 +50,8 @@ Publications
   {% endfor %}
 </ul>
 -->
-[My publication list](https://trungtpham.github.io/publications/)
+As of August 2018: citations: 254, h-index: 10
+[Publication list](https://trungtpham.github.io/publications/)
 
 Talks
 ======
