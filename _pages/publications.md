@@ -10,6 +10,9 @@ author_profile: true
 You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
 {% endif %}
 -->
+
+You can also find my articles on [my Google Scholar profile](https://scholar.google.com.au/citations?user=Rfj56F4AAAAJ&hl=en)
+
       
 2018
 =====
