@@ -13,35 +13,16 @@ You can also find my articles on <u><a href="{{author.googlescholar}}">my Google
 As of August 2018: citations: 254, h-index: 10  
 You can also find my articles on [my Google Scholar profile](https://scholar.google.com.au/citations?user=Rfj56F4AAAAJ&hl=en "Google Scholar")
 
-      
-2018
-=====
-|   |   |
+|  2018 |   |
 |---|---|
 | Teaser | K. Li, **T. Pham**, H. Zhan, I. Reid <br> Efficient Dense Point Cloud Object Reconstruction using Deformation Vector Fields <br>ECCV 2018| 
 |Teaser | **T. Pham**, V BG Kumar, T-T Do, G Carneiro, I Reid <br> Bayesian Instance Segmentation in Open Set World <br> ECCV 2018|
 |Teaser |T-T Do, **T. Pham**, M. Cai, I. Reid  <br> LieNet: Real-time Monocular Object Instance 6D Pose Estimation <br> BMVC 2018 (Oral) |
-
-M Hosseinzadeh, Y Latif, **T. Pham**, N Suenderhauf, I Reid  
-Structure Aware SLAM using Quadrics and Planes  
-RSS-LAIR workshop, 2018
-
-JC Hodgson et al. **T. Pham** et al.  
-Drones count wildlife more accurately and precisely than humans  
-Methods in Ecology and Evolution 2018
-
-
-**T. T. Pham**, TT Do, N. Snderhauf, I. Reid  
-SceneCut: Joint Geometric and Object Segmentation for Indoor Scenes  
-ICRA 2018
-
-A Milan, **T Pham** et al.  
-Semantic segmentation from limited training data  
-ICRA 2018
-
-D. Morrison et al. **T. Pham** et al.  
-Cartman: The low-cost Cartesian Manipulator that won the Amazon Robotics Challenge  
-ICRA 2018
+|Teaser|M Hosseinzadeh, Y Latif, **T. Pham**, N Suenderhauf, I Reid <br> Structure Aware SLAM using Quadrics and Planes  <br> RSS-LAIR workshop, 2018|
+|Teaser|JC Hodgson et al. **T. Pham** et al.  <br> Drones count wildlife more accurately and precisely than humans  <br> Methods in Ecology and Evolution 2018|
+|Teaser|**T. T. Pham**, TT Do, N. Snderhauf, I. Reid<br>SceneCut: Joint Geometric and Object Segmentation for Indoor Scenes<br>ICRA 2018|
+|Teaser|A Milan, **T Pham** et al. <br> Semantic segmentation from limited training data <br> ICRA 2018|
+|Teaser|D. Morrison et al. **T. Pham** et al.  <br>Cartman: The low-cost Cartesian Manipulator that won the Amazon Robotics Challenge  <br>ICRA 2018|
 
 2017
 =====
