@@ -17,16 +17,14 @@ You can also find my articles on [my Google Scholar profile](https://scholar.goo
 2018
 =====
 
-|  1 	|   2	|   3	|   4	|   5	|
-|---	|---	|---	|---	|---	|
-|   	|  K. Li, **T. Pham**, H. Zhan, I. Reid  
-Efficient Dense Point Cloud Object Reconstruction using Deformation Vector Fields  
-ECCV 2018 	|   	|   	|   	|
+|  1 	|   2	|
+|---	|---	|
+|   	|  K. Li, **T. Pham**, H. Zhan, I. Reid  Efficient Dense Point Cloud Object Reconstruction using Deformation Vector Fields  ECCV 2018|
 
 
-| Image | K. Li, **T. Pham**, H. Zhan, I. Reid  
+K. Li, **T. Pham**, H. Zhan, I. Reid  
 Efficient Dense Point Cloud Object Reconstruction using Deformation Vector Fields  
-ECCV 2018 | 
+ECCV 2018
 
 
 **T. Pham**, V BG Kumar, T-T Do, G Carneiro, I Reid  
