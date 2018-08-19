@@ -20,81 +20,28 @@ You can also find my articles on [my Google Scholar profile](https://scholar.goo
 |Teaser |T-T Do, **T. Pham**, M. Cai, I. Reid  <br> LieNet: Real-time Monocular Object Instance 6D Pose Estimation <br> BMVC 2018 (Oral) |
 |Teaser|M Hosseinzadeh, Y Latif, **T. Pham**, N Suenderhauf, I Reid <br> Structure Aware SLAM using Quadrics and Planes  <br> RSS-LAIR workshop, 2018|
 |Teaser|JC Hodgson et al. **T. Pham** et al.  <br> Drones count wildlife more accurately and precisely than humans  <br> Methods in Ecology and Evolution 2018|
-|Teaser|**T. T. Pham**, TT Do, N. Snderhauf, I. Reid<br>SceneCut: Joint Geometric and Object Segmentation for Indoor Scenes<br>ICRA 2018|
-|Teaser|A Milan, **T Pham** et al. <br> Semantic segmentation from limited training data <br> ICRA 2018|
+|Teaser|**T. Pham**, TT Do, N. Snderhauf, I. Reid<br>SceneCut: Joint Geometric and Object Segmentation for Indoor Scenes<br>ICRA 2018|
+|Teaser|A Milan, **T. Pham** et al. <br> Semantic segmentation from limited training data <br> ICRA 2018|
 |Teaser|D. Morrison et al. **T. Pham** et al.  <br>Cartman: The low-cost Cartesian Manipulator that won the Amazon Robotics Challenge  <br>ICRA 2018|
-
-2017
-=====
-
-T. Tran, **T. T. Pham**, G. Carneiro, L. Palmer, I. Reid  
-A Bayesian Data Augmentation Approach for Learning Deep Models  
-NIPS 2017
-
-N. Snderhauf, **T. T. Pham**, Y. Latif, M. Milford, I. Reid  
-Meaningful Maps - Object-Oriented Semantic Mapping  
-IROS 2017
-
-Thanh-Toan Do, Dang-Khoa Le Tan, **Trung T. Pham**, Ngai-Man Cheung  
-Simultaneous Feature Aggregating and Hashing for Large-scale Image Search  
-CVPR 2017
-
-J Leitner et al, **T. T. Pham**, et al.  
-The ACRV Picking Benchmark (APB): A Robotic Shelf Picking Benchmark to Foster Reproducible Research  
-ICRA 2017
-
-2016
-=====
-
-**T. T. Pham**, M. Eich, I. Reid and G. Wyeth  
-Geometrically Consistent Plane Extraction for Dense Indoor 3D Maps Segmentation  
-IROS 2016
-
-**T. T. Pham**, H. Rezatofighi, T-J Chin, I. Reid  
-Efficient Point Process Inference for Large-scale Object Detection  
-CVPR 2016
-
-2015
-=====
-
-**T. T. Pham**, I. Reid, S. Gould, Y. Latif  
-Hierarchical Higher-order Regression Forest Fields: An Application to 3D Indoor Scene Labelling  
-ICCV 2015
-
-A. Eriksson, **T. T. Pham**, T.-J. Chin and I. Reid  
-The k-support norm and convex envelopes of cardinality and rank  
-In Computer Vision and Pattern Recognition (CVPR), 2015
-
-2014
-=====
-
-**T. T. Pham**  
-Robust Parameter Estimation in Computer Vision: Optimisation Methods and Applications  
-PhD thesis, School of Computer Science, The University of Adelaide, April, 2014.
-
-**T. T. Pham**, T.-J. Chin, K. Schindler and D. Suter  
-Interacting Geometric Priors for Robust Multi-Model Fitting  
-IEEE Transactions on Image Processing (2014)
-
-**T. T. Pham**, T.-J. Chin, J. Yu and D. Suter  
-The Random Cluster Model for Robust Geometric Fitting  
-IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI) 2013
-
-2012
-=====
-
-**T. T. Pham**, T.-J. Chin, J. Yu and D. Suter  
-The Random Cluster Model for Robust Geometric Fitting  
-In CVPR 2012, Providence, Rhode Island, USA.
-
-2011
-=====
-
-**T. T. Pham**, T.-J. Chin, J. Yu and D. Suter  
-Simultaneous Sampling and Multi-Structure Fitting with Adaptive Reversible Jump MCMC  
-In NIPS 2011, Granada, Spain.
-
-
+|2107| |
+|Teaser |T. Tran, **T. Pham**, G. Carneiro, L. Palmer, I. Reid <br> A Bayesian Data Augmentation Approach for Learning Deep Models <br> NIPS 2017|
+|Teaser| N. Snderhauf, **T. Pham**, Y. Latif, M. Milford, I. Reid <br> Meaningful Maps - Object-Oriented Semantic Mapping <br> IROS 2017|
+|Teaser|T.T. Do, D-K L Tan, **T. Pham**, N-M Cheung <br> Simultaneous Feature Aggregating and Hashing for Large-scale Image Search <br> CVPR 2017|
+|Teaser| J Leitner et al, **T. Pham**, et al.  <br> The ACRV Picking Benchmark (APB): A Robotic Shelf Picking Benchmark to Foster Reproducible Research <br> ICRA 2017|
+|2016| |
+|Teaser| **T. Pham**, M. Eich, I. Reid and G. Wyeth <br> Geometrically Consistent Plane Extraction for Dense Indoor 3D Maps Segmentation <br> IROS 2016|
+|Teaser| **T. Pham**, H. Rezatofighi, T-J Chin, I. Reid <br> Efficient Point Process Inference for Large-scale Object Detection <br> CVPR 2016|
+|2015| |
+|Teaser|**T. Pham**, I. Reid, S. Gould, Y. Latif <br> Hierarchical Higher-order Regression Forest Fields: An Application to 3D Indoor Scene Labelling <br >ICCV 2015 |
+|Teaser|A. Eriksson, **T. Pham**, T.-J. Chin and I. Reid <br> The k-support norm and convex envelopes of cardinality and rank  <br> In Computer Vision and Pattern Recognition (CVPR), 2015|
+|2014||
+|Teaser|**T. Pham**  <br >Robust Parameter Estimation in Computer Vision: Optimisation Methods and Applications  <br> PhD thesis, School of Computer Science, The University of Adelaide, April, 2014.|
+|Teaser|**T. Pham**, T.-J. Chin, K. Schindler and D. Suter <br> Interacting Geometric Priors for Robust Multi-Model Fitting <br> IEEE Transactions on Image Processing (2014)|
+|Teaser|**T. Pham**, T.-J. Chin, J. Yu and D. Suter <br> The Random Cluster Model for Robust Geometric Fitting  <br> IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI) 2013|
+|2012||
+|Teaser|**T. Pham**, T.-J. Chin, J. Yu and D. Suter <br> The Random Cluster Model for Robust Geometric Fitting  <br> In CVPR 2012, Providence, Rhode Island, USA.|
+|2011||
+|Teaser|**T. Pham**, T.-J. Chin, J. Yu and D. Suter <br> Simultaneous Sampling and Multi-Structure Fitting with Adaptive Reversible Jump MCMC  <br> In NIPS 2011, Granada, Spain.|
 <!--
 {% include base_path %}
 
