@@ -16,8 +16,8 @@ You can also find my articles on [my Google Scholar profile](https://scholar.goo
 
 |  2018 |   |
 |---|---|
-|![ECCV18a](../images/3D_deep_reconstruction.png | width=50)  | K. Li, **T. Pham**, H. Zhan, I. Reid <br> Efficient Dense Point Cloud Object Reconstruction using Deformation Vector Fields <br>ECCV 2018|
-|![ECCV18b](../images/openset_instance.jpg | width=50)  | **T. Pham**, V BG Kumar, T-T Do, G Carneiro, I Reid <br> Bayesian Instance Segmentation in Open Set World <br> ECCV 2018|
+|![](../images/3D_deep_reconstruction.png){:height="100px" width="100px"}  | K. Li, **T. Pham**, H. Zhan, I. Reid <br> Efficient Dense Point Cloud Object Reconstruction using Deformation Vector Fields <br>ECCV 2018|
+|![](../images/openset_instance.jpg) {:height="100px" width="100px"}  | **T. Pham**, V BG Kumar, T-T Do, G Carneiro, I Reid <br> Bayesian Instance Segmentation in Open Set World <br> ECCV 2018|
 |Teaser |T-T Do, **T. Pham**, M. Cai, I. Reid  <br> LieNet: Real-time Monocular Object Instance 6D Pose Estimation <br> BMVC 2018 (Oral) |
 |Teaser|M Hosseinzadeh, Y Latif, **T. Pham**, N Suenderhauf, I Reid <br> Structure Aware SLAM using Quadrics and Planes  <br> RSS-LAIR workshop, 2018|
 |Teaser|JC Hodgson et al. **T. Pham** et al.  <br> Drones count wildlife more accurately and precisely than humans  <br> Methods in Ecology and Evolution 2018|
