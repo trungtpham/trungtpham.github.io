@@ -1,5 +1,5 @@
 ---
-layout: archive
+#layout: archive
 title: "CV"
 permalink: /cv/
 author_profile: true
@@ -50,7 +50,7 @@ Publications
   {% endfor %}
 </ul>
 -->
-[My Google Scholar profile](https://scholar.google.com.au/citations?user=Rfj56F4AAAAJ&hl=en)
+[My publication list](https://trungtpham.github.io/publications/)
 
 Talks
 ======
