@@ -13,6 +13,7 @@ You can also find my articles on <u><a href="{{author.googlescholar}}">my Google
 As of August 2018: citations: 254, h-index: 10  
 You can also find my articles on [my Google Scholar profile](https://scholar.google.com.au/citations?user=Rfj56F4AAAAJ&hl=en "Google Scholar")
 
+{table-plus:border=0|class=''}
 |  2018 |   |
 |---|---|
 | Teaser | K. Li, **T. Pham**, H. Zhan, I. Reid <br> Efficient Dense Point Cloud Object Reconstruction using Deformation Vector Fields <br>ECCV 2018| 
@@ -23,6 +24,7 @@ You can also find my articles on [my Google Scholar profile](https://scholar.goo
 |Teaser|**T. T. Pham**, TT Do, N. Snderhauf, I. Reid<br>SceneCut: Joint Geometric and Object Segmentation for Indoor Scenes<br>ICRA 2018|
 |Teaser|A Milan, **T Pham** et al. <br> Semantic segmentation from limited training data <br> ICRA 2018|
 |Teaser|D. Morrison et al. **T. Pham** et al.  <br>Cartman: The low-cost Cartesian Manipulator that won the Amazon Robotics Challenge  <br>ICRA 2018|
+{table-plus}
 
 2017
 =====
