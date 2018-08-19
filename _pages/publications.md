@@ -13,10 +13,9 @@ You can also find my articles on <u><a href="{{author.googlescholar}}">my Google
 As of August 2018: citations: 254, h-index: 10  
 You can also find my articles on [my Google Scholar profile](https://scholar.google.com.au/citations?user=Rfj56F4AAAAJ&hl=en "Google Scholar")
 
-{table-plus:border=0|class=''}
 |  2018 |   |
 |---|---|
-| Teaser | K. Li, **T. Pham**, H. Zhan, I. Reid <br> Efficient Dense Point Cloud Object Reconstruction using Deformation Vector Fields <br>ECCV 2018| 
+Teaser | K. Li, **T. Pham**, H. Zhan, I. Reid <br> Efficient Dense Point Cloud Object Reconstruction using Deformation Vector Fields <br>ECCV 2018
 |Teaser | **T. Pham**, V BG Kumar, T-T Do, G Carneiro, I Reid <br> Bayesian Instance Segmentation in Open Set World <br> ECCV 2018|
 |Teaser |T-T Do, **T. Pham**, M. Cai, I. Reid  <br> LieNet: Real-time Monocular Object Instance 6D Pose Estimation <br> BMVC 2018 (Oral) |
 |Teaser|M Hosseinzadeh, Y Latif, **T. Pham**, N Suenderhauf, I Reid <br> Structure Aware SLAM using Quadrics and Planes  <br> RSS-LAIR workshop, 2018|
