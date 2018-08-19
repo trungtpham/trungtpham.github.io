@@ -11,7 +11,7 @@ You can also find my articles on <u><a href="{{author.googlescholar}}">my Google
 {% endif %}
 -->
 
-You can also find my articles on [my Google Scholar profile](https://scholar.google.com.au/citations?user=Rfj56F4AAAAJ&hl=en)
+You can also find my articles on [my Google Scholar profile](https://scholar.google.com.au/citations?user=Rfj56F4AAAAJ&hl=en "Google Scholar")
 
       
 2018
