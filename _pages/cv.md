@@ -50,7 +50,7 @@ Publications
   {% endfor %}
 </ul>
 -->
-You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
+<u><a href="{{https://scholar.google.com.au/citations?user=Rfj56F4AAAAJ&hl=en}}">My Google Scholar profile</a>.</u>
 
 Talks
 ======
