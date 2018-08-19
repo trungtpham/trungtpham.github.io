@@ -7,6 +7,10 @@ I am a Sr. Computer Vision Scientist at NVIDIA, where I am working on visual per
 My research interests ranges from low-level geometric vision (ie robust geometric fitting, 3D reconstruction, SLAM) to high-level semantic scene understanding (ie object detection, semantic segmentation).
 
 **Featured publications**
+|---|---|
+|Teaser | K. Li, **T. Pham**, H. Zhan, I. Reid <br> Efficient Dense Point Cloud Object Reconstruction using Deformation Vector Fields <br>ECCV 2018|
+|Teaser | **T. Pham**, V BG Kumar, T-T Do, G Carneiro, I Reid <br> Bayesian Instance Segmentation in Open Set World <br> ECCV 2018|
+|Teaser |T-T Do, **T. Pham**, M. Cai, I. Reid  <br> LieNet: Real-time Monocular Object Instance 6D Pose Estimation <br> BMVC 2018 (Oral) |
 
 **News**
 * July 2018: 2 papers accepted to ECCV 2018, 1 paper accepted to BMVC 2018 (oral). 
