@@ -50,7 +50,7 @@ Publications
   {% endfor %}
 </ul>
 -->
-[My Google Scholar profile] (https://scholar.google.com.au/citations?user=Rfj56F4AAAAJ&hl=en)
+[My Google Scholar profile](https://scholar.google.com.au/citations?user=Rfj56F4AAAAJ&hl=en)
 
 Talks
 ======
