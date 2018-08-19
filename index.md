@@ -7,6 +7,7 @@ I am a Sr. Computer Vision Scientist at NVIDIA, where I am working on visual per
 My research interests ranges from low-level geometric vision (ie robust geometric fitting, 3D reconstruction, SLAM) to high-level semantic scene understanding (ie object detection, semantic segmentation).
 
 **Featured publications**
+
 |||
 |---|---|
 |Teaser | K. Li, **T. Pham**, H. Zhan, I. Reid <br> Efficient Dense Point Cloud Object Reconstruction using Deformation Vector Fields <br>ECCV 2018|
