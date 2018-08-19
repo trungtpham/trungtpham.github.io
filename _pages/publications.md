@@ -17,17 +17,11 @@ You can also find my articles on [my Google Scholar profile](https://scholar.goo
 2018
 =====
 
-|  1 	|   2	|
-|---	|---	|
-|   	|  K. Li, **T. Pham**, H. Zhan, I. Reid  
-Efficient Dense Point Cloud Object Reconstruction using Deformation Vector Fields  
-ECCV 2018|
-
+|{{:birds.png?nolink&150|}}| JC Hodgson et al. **T. Pham** et al. \\ Drones count wildlife more accurately and precisely than humans \\ Methods in Ecology and Evolution 2018 [[https://www.biorxiv.org/content/biorxiv/early/2017/07/18/165019.full.pdf|PDF]] | | 
 
 K. Li, **T. Pham**, H. Zhan, I. Reid  
 Efficient Dense Point Cloud Object Reconstruction using Deformation Vector Fields  
 ECCV 2018
-
 
 **T. Pham**, V BG Kumar, T-T Do, G Carneiro, I Reid  
 Bayesian Instance Segmentation in Open Set World  
