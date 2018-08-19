@@ -1,6 +1,6 @@
 **Welcome!**
 
-I am a Sr. Computer Vision Scientist at NVIDIA, where I am working on visual perception algorithms for driverless cars. Prior to NVIDIA, I was a research fellow at the [Australian Centre of Robotic Vision](https://www.roboticvision.org/). I secured my PhD in Computer Vision in 2014 from the University of Adelaide. In 2013, I was one of 200 young researchers worldwide invited to attend [Heidelberg Laureate Forum](http://www.heidelberg-laureate-forum.org/). I was awarded a [Google PhD Fellowship](https://ai.googleblog.com/2012/06/2012-google-phd-fellowships.html) in 2012.
+I am a Sr. Computer Vision Scientist at NVIDIA, where I am working on visual perception algorithms for driverless cars. Prior to NVIDIA, I was a research fellow at the [Australian Centre of Robotic Vision](https://www.roboticvision.org/). I secured my PhD in Computer Vision in 2014 from the University of Adelaide. In 2013, I was one of 200 young researchers worldwide invited to attend [Heidelberg Laureate Forum](http://www.heidelberg-laureate-forum.org/). I was awarded a [Google Australia Fellowship](https://ai.googleblog.com/2012/06/2012-google-phd-fellowships.html) in Computer Vision in 2012.
 
 **Research Interests**
 
