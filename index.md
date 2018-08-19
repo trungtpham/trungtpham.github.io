@@ -8,7 +8,6 @@ My research interests ranges from low-level geometric vision (ie robust geometri
 
 **Featured publications**
 
-|   |   |
 |---|---|
 |Teaser | K. Li, **T. Pham**, H. Zhan, I. Reid <br> Efficient Dense Point Cloud Object Reconstruction using Deformation Vector Fields <br>ECCV 2018|
 |Teaser | **T. Pham**, V BG Kumar, T-T Do, G Carneiro, I Reid <br> Bayesian Instance Segmentation in Open Set World <br> ECCV 2018|
