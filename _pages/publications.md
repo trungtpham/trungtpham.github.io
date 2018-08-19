@@ -17,8 +17,9 @@ You can also find my articles on [my Google Scholar profile](https://scholar.goo
 2018
 =====
 
-| Image | K. Li, **T. Pham**, H. Zhan, I. Reid <br> Efficient Dense Point Cloud Object Reconstruction using Deformation Vector Fields <br>
-ECCV 2018 |
+|---|---|
+| Image   |  K. Li, **T. Pham**, H. Zhan, I. Reid <br> Efficient Dense Point Cloud Object Reconstruction using Deformation Vector Fields <br>
+ECCV 2018  |
 
 **T. Pham**, V BG Kumar, T-T Do, G Carneiro, I Reid  
 Bayesian Instance Segmentation in Open Set World  
