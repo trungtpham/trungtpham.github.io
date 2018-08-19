@@ -16,6 +16,7 @@ You can also find my articles on [my Google Scholar profile](https://scholar.goo
       
 2018
 =====
+|   |   |
 |---|---|
 | Teaser | K. Li, **T. Pham**, H. Zhan, I. Reid <br> Efficient Dense Point Cloud Object Reconstruction using Deformation Vector Fields <br>ECCV 2018| 
 
