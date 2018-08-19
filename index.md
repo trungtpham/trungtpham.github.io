@@ -4,7 +4,7 @@ I am a Sr. Computer Vision Scientist at NVIDIA, where I am working on visual per
 
 **Research Interests**
 
-My research interests ranges from low-level geometric vision to high-level semantic scene understanding. Currently, I am particularly interested in learning deep networks to predict geometric objects present in the images.
+My research interests ranges from low-level geometric vision (ie robust geometric fitting, 3D reconstruction, SLAM) to high-level semantic scene understanding (ie object detection, semantic segmentation). Currently, I particularly focus on learning deep networks to predict common senses from visual data for autonomous driving.
 
 **Featured publications**
 
