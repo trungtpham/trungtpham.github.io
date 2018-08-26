@@ -42,4 +42,4 @@ You can also find my articles on [my Google Scholar profile](https://scholar.goo
 |2012||
 |<img src="../images/dinabooks_rcm.png" alt="drawing" width="100px"/>|**T. Pham**, T.-J. Chin, J. Yu and D. Suter <br> The Random Cluster Model for Robust Geometric Fitting  <br> In CVPR 2012, Providence, Rhode Island, USA.|
 |2011||
-|<img src="../images/3motion_left1.png" alt="drawing" width="100px"/>|**T. Pham**, T.-J. Chin, J. Yu and D. Suter <br> Simultaneous Sampling and Multi-Structure Fitting with Adaptive Reversible Jump MCMC  <br> In NIPS 2011, Granada, Spain.|
+|<img src="../images/3motions.png" alt="drawing" width="100px"/>|**T. Pham**, T.-J. Chin, J. Yu and D. Suter <br> Simultaneous Sampling and Multi-Structure Fitting with Adaptive Reversible Jump MCMC  <br> In NIPS 2011, Granada, Spain.|
