@@ -9,12 +9,15 @@ main:
   - title: "Talks"
     url: /talks/    
       
-  - title: "Collaborators"
-    url: /collaborators/
-    
   - title: "CV"
     url: /cv/
     
+  - title: "Collaborators"
+    url: /collaborators/
+    
   - title: "Blog Posts"
     url: /year-archive/
+    
+  - title: "Photography"
+    url: /photography/
   
