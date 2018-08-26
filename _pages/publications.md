@@ -12,7 +12,7 @@ You can also find my articles on <u><a href="{{author.googlescholar}}">my Google
 {% endif %}
 -->
 As of August 2018: citations: 260, h-index: 10  
-You can also find my articles on [my Google Scholar profile](https://scholar.google.com.au/citations?user=Rfj56F4AAAAJ&hl=en "Google Scholar")
+[My Google Scholar profile](https://scholar.google.com.au/citations?user=Rfj56F4AAAAJ&hl=en "Google Scholar")
 
 |  2018 |   |
 |---|---|
