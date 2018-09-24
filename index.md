@@ -16,6 +16,7 @@ My research interests ranges from low-level geometric vision (ie robust geometri
 
 
 **News**
+* September 2018: 1 paper accepted to ACCV 2018.
 * July 2018: 2 papers accepted to ECCV 2018, 1 paper accepted to BMVC 2018 (oral). 
 * June 2018: I am excited to join NVIDIA as a Senior Computer Vision Scientist. 
 * We are organising a Real-World Challenges and New Benchmarks for Deep Learning in Robotic Vision workshop, in conjunction with CVPR 2018. 
