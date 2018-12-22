@@ -16,6 +16,8 @@ My research interests ranges from low-level geometric vision (ie robust geometri
 
 
 **News**
+* November 2018: 1 paper accepted to WACV18.
+* Octobor 2018: Appointed as Associate Editor for IEEE Robotics and Automation Letters.
 * September 2018: 1 paper accepted to ACCV 2018.
 * July 2018: 2 papers accepted to ECCV 2018, 1 paper accepted to BMVC 2018 (oral). 
 * June 2018: I am excited to join NVIDIA as a Senior Computer Vision Scientist. 
