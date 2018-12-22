@@ -11,8 +11,8 @@ author_profile: true
 You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
 {% endif %}
 -->
-As of September 2018: citations: 280, h-index: 11  
-PhD Thesis(1), TPAMI(1), TIP(1), CVPR(4), ECCV(2), ICCV(1), NIPS(2), BMVC(1), IROS(2), ICRA(4).
+As of Dec 2018: citations: 331, h-index: 12  
+PhD Thesis(1), TPAMI(1), TIP(1), CVPR(4), ECCV(2), ICCV(1), NIPS(2), BMVC(1), IROS(2), ICRA(4), WACV(1), ACCV(1).
 
 [My Google Scholar profile](https://scholar.google.com.au/citations?user=Rfj56F4AAAAJ&hl=en "Google Scholar")
 
