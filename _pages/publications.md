@@ -17,8 +17,8 @@ PhD Thesis(1), TPAMI(1), TIP(1), CVPR(4), ECCV(2), ICCV(1), NIPS(2), BMVC(1), IR
 
 |  2018 |   |
 |---|---|
-|<img src="../images/accv2018.png" alt="drawing" width="100px"/>| M. Hosseinzadeh, Y. Latif, **T. Pham**, N. Sünderhauf, I. Reid <br> Structure Aware SLAM using Quadrics and Planes <br>ACCV 2018|
-|<img src="../images/3dobj_deep_reconstruction.png" alt="drawing" width="100px"/>|K. Li, **T. Pham**, H. Zhan, I. Reid <br> Efficient Dense Point Cloud Object Reconstruction using Deformation Vector Fields <br>ECCV 2018|
+|<img src="../images/accv2018.png" alt="drawing" width="100px"/>| M. Hosseinzadeh, Y. Latif, **T. Pham**, N. Sünderhauf, I. Reid <br> Structure Aware SLAM using Quadrics and Planes <br>ACCV 2018 [arxiv](https://arxiv.org/abs/1804.09111)|
+|<img src="../images/3dobj_deep_reconstruction.png" alt="drawing" width="100px"/>|K. Li, **T. Pham**, H. Zhan, I. Reid <br> Efficient Dense Point Cloud Object Reconstruction using Deformation Vector Fields <br>ECCV 2018 [PDF](http://openaccess.thecvf.com/content_ECCV_2018/papers/Kejie_Li_Efficient_Dense_Point_ECCV_2018_paper.pdf)|
 |<img src="../images/openset_instance.jpg" alt="drawing" width="100px"/> | **T. Pham**, V BG Kumar, T-T Do, G Carneiro, I Reid <br> Bayesian Instance Segmentation in Open Set World <br> ECCV 2018 [arxiv](https://arxiv.org/abs/1806.00911)|
 |<img src="../images/lienet.png" alt="drawing" width="100px"/>|T-T Do, **T. Pham**, M. Cai, I. Reid  <br> LieNet: Real-time Monocular Object Instance 6D Pose Estimation <br> BMVC 2018 (Oral) [PDF](http://bmvc2018.org/contents/papers/0694.pdf)|
 |<img src="../images/accv2018.png" alt="drawing" width="100px"/>|M Hosseinzadeh, Y Latif, **T. Pham**, N Suenderhauf, I Reid <br> Structure Aware SLAM using Quadrics and Planes  <br> RSS-LAIR workshop, 2018|
@@ -40,7 +40,7 @@ PhD Thesis(1), TPAMI(1), TIP(1), CVPR(4), ECCV(2), ICCV(1), NIPS(2), BMVC(1), IR
 |2014||
 |<img src="../images/phd_thesis.png" alt="drawing" width="100px"/>|**T. Pham**  <br >Robust Parameter Estimation in Computer Vision: Optimisation Methods and Applications  <br> PhD thesis, School of Computer Science, The University of Adelaide, April, 2014.|
 |<img src="../images/vp_detection_manhattan.png" alt="drawing" width="100px"/>|**T. Pham**, T.-J. Chin, K. Schindler and D. Suter <br> Interacting Geometric Priors for Robust Multi-Model Fitting <br> IEEE Transactions on Image Processing (2014)|
-|<img src="../images/hall_gnd.png" alt="drawing" width="100px"/>|**T. Pham**, T.-J. Chin, J. Yu and D. Suter <br> The Random Cluster Model for Robust Geometric Fitting  <br> IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI) 2013 [Code] (https://github.com/trungtpham/RCMSA)|
+|<img src="../images/hall_gnd.png" alt="drawing" width="100px"/>|**T. Pham**, T.-J. Chin, J. Yu and D. Suter <br> The Random Cluster Model for Robust Geometric Fitting  <br> IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI) 2013 [Code](https://github.com/trungtpham/RCMSA)|
 |2012||
 |<img src="../images/dinabooks_rcm.png" alt="drawing" width="100px"/>|**T. Pham**, T.-J. Chin, J. Yu and D. Suter <br> The Random Cluster Model for Robust Geometric Fitting  <br> In CVPR 2012, Providence, Rhode Island, USA.|
 |2011||
