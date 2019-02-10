@@ -17,11 +17,11 @@ PhD Thesis(1), TPAMI(1), TIP(1), CVPR(4), ECCV(2), ICCV(1), NIPS(2), BMVC(1), IR
 
 |  2018 |   |
 |---|---|
-|<img src="../images/accv2018.png" alt="drawing" width="100px"/>| K. Li, **T. Pham**, H. Zhan, I. Reid <br> Structure Aware SLAM using Quadrics and Planes <br>ACCV 2018|
-|<img src="../images/3dobj_deep_reconstruction.png" alt="drawing" width="100px"/>| M. Hosseinzadeh, Y. Latif, **T. Pham**, N. Sünderhauf, I. Reid <br> Efficient Dense Point Cloud Object Reconstruction using Deformation Vector Fields <br>ECCV 2018|
+|<img src="../images/accv2018.png" alt="drawing" width="100px"/>| M. Hosseinzadeh, Y. Latif, **T. Pham**, N. Sünderhauf, I. Reid <br> Structure Aware SLAM using Quadrics and Planes <br>ACCV 2018|
+|<img src="../images/3dobj_deep_reconstruction.png" alt="drawing" width="100px"/>|K. Li, **T. Pham**, H. Zhan, I. Reid <br> Efficient Dense Point Cloud Object Reconstruction using Deformation Vector Fields <br>ECCV 2018|
 |<img src="../images/openset_instance.jpg" alt="drawing" width="100px"/> | **T. Pham**, V BG Kumar, T-T Do, G Carneiro, I Reid <br> Bayesian Instance Segmentation in Open Set World <br> ECCV 2018|
 |<img src="../images/lienet.png" alt="drawing" width="100px"/>|T-T Do, **T. Pham**, M. Cai, I. Reid  <br> LieNet: Real-time Monocular Object Instance 6D Pose Estimation <br> BMVC 2018 (Oral) |
-||M Hosseinzadeh, Y Latif, **T. Pham**, N Suenderhauf, I Reid <br> Structure Aware SLAM using Quadrics and Planes  <br> RSS-LAIR workshop, 2018|
+|<img src="../images/accv2018.png" alt="drawing" width="100px"/>|M Hosseinzadeh, Y Latif, **T. Pham**, N Suenderhauf, I Reid <br> Structure Aware SLAM using Quadrics and Planes  <br> RSS-LAIR workshop, 2018|
 |<img src="../images/birds_counting.png" alt="drawing" width="100px"/>|JC Hodgson et al. **T. Pham** et al.  <br> Drones count wildlife more accurately and precisely than humans  <br> Methods in Ecology and Evolution 2018|
 |<img src="../images/scenecut.png" alt="drawing" width="100px"/>|**T. Pham**, TT Do, N. Snderhauf, I. Reid<br>SceneCut: Joint Geometric and Object Segmentation for Indoor Scenes<br>ICRA 2018|
 |<img src="../images/cartman_vision.png" alt="drawing" width="100px"/>|A Milan, **T. Pham** et al. <br> Semantic segmentation from limited training data <br> ICRA 2018|
