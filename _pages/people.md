@@ -1,11 +1,11 @@
 ---
 layout: archive
-title: "People"
+title: ""
 permalink: /people/
 author_profile: true
 ---
 
 {% include base_path %}
 
-|  Supervisors |   |
-|<img src="../images/accv2018.png" alt="drawing" width="100px"/>|Prof. Tat-Jun Chin \\ PhD Supervisor|
+|Supervisors||
+|||
