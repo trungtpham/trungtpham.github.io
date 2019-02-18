@@ -6,15 +6,6 @@ I am a Sr. Computer Vision Scientist at [NVIDIA Automotive](https://www.nvidia.c
 
 My researches range from low-level geometric vision (ie robust geometric fitting, 3D reconstruction, SLAM) to high-level semantic scene understanding (ie object detection, semantic segmentation). I am also interested in robust deep learning --- developing robust learning algorithms to handle noisy, outlier-contaminated datasets.
 
-**Featured publications**
-
-|||
-|---|---|
-|<img src="/images/3dobj_deep_reconstruction.png" alt="drawing" width="100px"/>| K. Li, **T. Pham**, H. Zhan, I. Reid <br> Efficient Dense Point Cloud Object Reconstruction using Deformation Vector Fields <br>ECCV 2018 [PDF](http://openaccess.thecvf.com/content_ECCV_2018/papers/Kejie_Li_Efficient_Dense_Point_ECCV_2018_paper.pdf)|
-|<img src="/images/openset_instance.jpg" alt="drawing" width="100px"/> | **T. Pham**, V BG Kumar, T-T Do, G Carneiro, I Reid <br> Bayesian Instance Segmentation in Open Set World <br> ECCV 2018 [arxiv](https://arxiv.org/abs/1806.00911)|
-|<img src="/images/lienet.png" alt="drawing" width="100px"/>|T-T Do, **T. Pham**, M. Cai, I. Reid  <br> LieNet: Real-time Monocular Object Instance 6D Pose Estimation <br> BMVC 2018 (Oral) [PDF](http://bmvc2018.org/contents/papers/0694.pdf)|
-
-
 **News**
 * November 2018: 1 paper accepted to WACV18.
 * Octobor 2018: Appointed as Associate Editor for IEEE Robotics and Automation Letters.
