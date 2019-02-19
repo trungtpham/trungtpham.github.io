@@ -7,6 +7,6 @@ author_profile: true
 
 {% include base_path %}
 
-|  2018 |   |
+|  Postdoc Supervisor |   |
 |---|---|
-|<img src="../images/ian_reid.jpg" alt="drawing" width="100px"/>| Prof. Ian Reid|
+|<img src="../images/ian_reid.jpg" alt="drawing" width="100px"/>| Prof. [Ian Reid](https://cs.adelaide.edu.au/~ianr/)|
