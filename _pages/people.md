@@ -9,7 +9,7 @@ author_profile: true
 
 |Supervisors|   |   |
 |---|---|---|
-|<img src="../images/ian_reid.jpg" alt="drawing" height="200px"/> <br> Prof. [Ian Reid](https://cs.adelaide.edu.au/~ianr/) <br> Postdoc Supervisor| <img src="../images/tj.jpg" alt="drawing" height="200px"/> <br> Prof. [Tat-Jun Chin](https://cs.adelaide.edu.au/~tjchin/) <br> PhD Supervisor| <img src="../images/david_suter.jpg" alt="drawing" height="200px"/> <br> Prof. [David Suter](https://cs.adelaide.edu.au/~dsuter/) <br> PhD Supervisor|
+|<img src="../images/ian_reid.jpg" alt="drawing" height="200px"/> <br> Prof. [Ian Reid](https://cs.adelaide.edu.au/~ianr/) <br> Postdoc Supervisor| <img src="../images/tj.jpg" alt="drawing" height="20px"/> <br> Prof. [Tat-Jun Chin](https://cs.adelaide.edu.au/~tjchin/) <br> PhD Supervisor| <img src="../images/david_suter.jpg" alt="drawing" height="200px"/> <br> Prof. [David Suter](https://cs.adelaide.edu.au/~dsuter/) <br> PhD Supervisor|
 |Collaborators|   |   |
 |---|---|---|
 
