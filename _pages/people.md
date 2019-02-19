@@ -9,4 +9,4 @@ author_profile: true
 
 |  Postdoc Supervisor |   |
 |---|---|
-|<img src="../images/ian_reid.jpg" alt="drawing" width="100px"/>| Prof. [Ian Reid](https://cs.adelaide.edu.au/~ianr/)|
+|<img src="../images/ian_reid.jpg" alt="drawing" width="100px"/> <br> Prof. [Ian Reid](https://cs.adelaide.edu.au/~ianr/)<\br>||
