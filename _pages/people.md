@@ -9,4 +9,5 @@ author_profile: true
 
 |   |   |
 |---|---|
-|<img src="../images/ian_reid.jpg" alt="drawing" width="100px"/> <br> Prof. [Ian Reid](https://cs.adelaide.edu.au/~ianr/) <br> Postdoc Supervisor||
+|<img src="../images/ian_reid.jpg" alt="drawing" width="100px"/> <br> Prof. [Ian Reid](https://cs.adelaide.edu.au/~ianr/) <br> Postdoc Supervisor|
+<img src="../images/tj.jpg" alt="drawing" width="100px"/> <br> Prof. [Tat-Jun Chin](https://cs.adelaide.edu.au/~tjchin/) <br> PhD Supervisor|
