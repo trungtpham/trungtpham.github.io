@@ -6,13 +6,13 @@ I am a Senior Computer Vision Scientist at [NVIDIA Automotive](https://www.nvidi
 
 My researches range from low-level geometric vision (ie geometric fitting, 3D reconstruction, SLAM) to high-level semantic scene understanding (ie object detection, semantic segmentation). More recently, I am particularly interested in robust deep learning, weakly and self-supervised deep learning. My favourite appplications include autonomous driving, indoor robotics. 
 
-My research has been published across top-tier computer vision, machine learning and robotic journals and conferences (TPAMI, CVPR, ICCV, ECCV, NIPS, ICRA)
+My research has been published across top-tier computer vision, machine learning and robotic journals and conferences (TPAMI, CVPR, ICCV, ECCV, NIPS, ICRA), and has attracted more than 1000 citations (as of Dec 2020).
 
 **News**
 * Dec 2020: [Open Set Instance Segmentation Code is now online.](https://github.com/trungtpham/open_set_instance_segmentation)
 * May 2020: [Intersection Pose estimation for autonmous driving.](https://www.youtube.com/watch?v=KPLTA4S_3Yo)
 * November 2018: 1 paper accepted to WACV18.
-* Octobor 2018: Appointed as Associate Editor for IEEE Robotics and Automation Letters.
+* October 2018: Appointed as Associate Editor for IEEE Robotics and Automation Letters.
 * September 2018: 1 paper accepted to ACCV 2018.
 * July 2018: 2 papers accepted to ECCV 2018, 1 paper accepted to BMVC 2018 (oral). 
 * June 2018: I am excited to join NVIDIA as a Senior Computer Vision Scientist. 
