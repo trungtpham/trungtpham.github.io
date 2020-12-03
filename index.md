@@ -1,6 +1,6 @@
 **Welcome!**
 
-I am a Senior Computer Vision Scientist at [NVIDIA Automotive](https://www.nvidia.com/en-us/self-driving-cars/), where I am working on computer vision and machine learning algorihtms for driverless cars. Prior to NVIDIA, I was a research fellow at the [Australian Centre of Robotic Vision](https://www.roboticvision.org/). I secured my PhD in Computer Vision in 2014 from the University of Adelaide. In 2013, I was one of 200 young researchers worldwide invited to attend [Heidelberg Laureate Forum](http://www.heidelberg-laureate-forum.org/). I was awarded a [Google Australia PhD Fellowship](https://ai.googleblog.com/2012/06/2012-google-phd-fellowships.html) in Computer Vision in 2012.
+I am a Senior Computer Vision Scientist at [NVIDIA Automotive](https://www.nvidia.com/en-us/self-driving-cars/), where I am working on computer vision and machine learning algorithms for driverless cars. Prior to NVIDIA, I was a research fellow at the [Australian Centre of Robotic Vision](https://www.roboticvision.org/). I secured my PhD in Computer Vision in 2014 from the University of Adelaide. In 2013, I was one of 200 young researchers worldwide invited to attend [Heidelberg Laureate Forum](http://www.heidelberg-laureate-forum.org/). I was awarded a [Google Australia PhD Fellowship](https://ai.googleblog.com/2012/06/2012-google-phd-fellowships.html) in Computer Vision in 2012.
 
 **Research Interests**
 
@@ -9,6 +9,7 @@ My researches range from low-level geometric vision (ie geometric fitting, 3D re
 My research has been published across top-tier computer vision, machine learning and robotic journals and conferences (TPAMI, CVPR, ICCV, ECCV, NIPS, ICRA)
 
 **News**
+* Dec 2020: [Open Set Instance Segmentation Code is now online.](https://github.com/trungtpham/open_set_instance_segmentation)
 * May 2020: [Intersection Pose estimation for autonmous driving.](https://www.youtube.com/watch?v=KPLTA4S_3Yo)
 * November 2018: 1 paper accepted to WACV18.
 * Octobor 2018: Appointed as Associate Editor for IEEE Robotics and Automation Letters.
