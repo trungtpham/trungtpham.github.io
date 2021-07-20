@@ -1,10 +1,11 @@
 **Welcome!**
 
-I am a Senior Computer Vision Scientist at [NVIDIA Automotive](https://www.nvidia.com/en-us/self-driving-cars/), where I am working on computer vision and machine learning algorithms for driverless cars. Prior to NVIDIA, I was a research fellow at the [Australian Centre of Robotic Vision](https://www.roboticvision.org/). I secured my PhD in Computer Vision in 2014 from the University of Adelaide. In 2013, I was one of 200 young researchers worldwide invited to attend [Heidelberg Laureate Forum](http://www.heidelberg-laureate-forum.org/). I was awarded a [Google Australia PhD Fellowship](https://ai.googleblog.com/2012/06/2012-google-phd-fellowships.html) in Computer Vision in 2012.
+I am a Senior Staff Computer Vision Scientist at [NVIDIA Automotive](https://www.nvidia.com/en-us/self-driving-cars/), where I am working on computer vision and machine learning algorithms for driverless cars. I am leading a team focused on innovating and developing end-to-end and real-time machine learning models that are capable of consuming multiple images from multiple cameras and predict/detect both static and dynamic objects in a 3D world space. The models will enable autonomous vehicles "see" their surrounding in full 360 degree. 
+Prior to NVIDIA, I was a research fellow at the [Australian Centre of Robotic Vision](https://www.roboticvision.org/). I secured my PhD in Computer Vision in 2014 from the University of Adelaide. In 2013, I was one of 200 young researchers worldwide invited to attend [Heidelberg Laureate Forum](http://www.heidelberg-laureate-forum.org/). I was awarded a [Google Australia PhD Fellowship](https://ai.googleblog.com/2012/06/2012-google-phd-fellowships.html) in Computer Vision in 2012.
 
 **Research Interests**
 
-My researches range from low-level geometric vision (ie geometric fitting, 3D reconstruction, SLAM) to high-level semantic scene understanding (ie object detection, semantic segmentation). More recently, I am particularly interested in robust deep learning, weakly and self-supervised deep learning. My favourite appplications include autonomous driving, indoor robotics. 
+My researches range from low-level geometric vision (ie geometric fitting, 3D reconstruction, SLAM) to high-level semantic scene understanding (ie object detection, semantic segmentation). More recently, I am particularly interested in end-to-end 3D perception from multiple cameras. My favourite appplications include autonomous driving, indoor robotics. 
 
 My research has been published across top-tier computer vision, machine learning and robotic journals and conferences (TPAMI, CVPR, ICCV, ECCV, NIPS, ICRA), and has attracted more than 1000 citations (as of Dec 2020).
 
