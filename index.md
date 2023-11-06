@@ -1,7 +1,12 @@
 **Welcome!**
 
-I am a Senior Staff Computer Vision Scientist at [NVIDIA Automotive](https://www.nvidia.com/en-us/self-driving-cars/), where I am working on computer vision and machine learning algorithms for driverless cars. I am leading a team focused on innovating and developing end-to-end and real-time machine learning models that are capable of consuming multiple images from multiple cameras and predict/detect both static and dynamic objects in a 3D world space. The models will enable autonomous vehicles "see" their surrounding in full 360 degree. 
-Prior to NVIDIA, I was a research fellow at the [Australian Centre of Robotic Vision](https://www.roboticvision.org/). I secured my PhD in Computer Vision in 2014 from the University of Adelaide. In 2013, I was one of 200 young researchers worldwide invited to attend [Heidelberg Laureate Forum](http://www.heidelberg-laureate-forum.org/). I was awarded a [Google Australia PhD Fellowship](https://ai.googleblog.com/2012/06/2012-google-phd-fellowships.html) in Computer Vision in 2012.
+I was born on a tranquil rubber and coffee farm, surrounded by the awe-inspiring beauty of nature. My journey into the realm of science and technology began later in life, as I didn't have access to a computer and the internet until I reached the age of 20. Fueled by unwavering determination and an insatiable thirst for knowledge, I set forth on a path of exploration and innovation.
+
+Today, I take immense pride in my role as a Senior Scientist at NVIDIA, a renowned company celebrated for its state-of-the-art technology. My journey stands as a testament to the belief that hard work and self-confidence can lead to remarkable success, regardless of one's starting point.
+
+My work at NVIDIA revolves around enabling vehicles to drive autonomously. Collaborating with a talented team of scientists and engineers, we are dedicated to pioneering and developing real-time machine learning models and algorithms for 4D visual perception, which aids in the advancement of self-driving technology.
+
+Prior to my time at NVIDIA, I conducted research at the Australian Centre of Robotic Vision and earned my PhD in Computer Vision from the University of Adelaide in 2014. In 2013, I had the privilege of being one of 200 young researchers from around the world invited to a prestigious event known as the Heidelberg Laureate Forum. In 2012, Google recognized my contributions to computer vision with a special scholarship.
 
 **Research Interests**
 
