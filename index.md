@@ -8,11 +8,13 @@ My work at NVIDIA revolves around enabling vehicles to drive autonomously. Colla
 
 Prior to my time at NVIDIA, I conducted research at the Australian Centre of Robotic Vision and earned my PhD in Computer Vision from the University of Adelaide in 2014. In 2013, I had the privilege of being one of 200 young researchers from around the world invited to a prestigious event known as the Heidelberg Laureate Forum. In 2012, Google recognized my contributions to computer vision with a special scholarship.
 
-**Research Interests**
+**Research**
 
-My researches range from low-level geometric vision (ie geometric fitting, 3D reconstruction, SLAM) to high-level semantic scene understanding (ie object detection, semantic segmentation). More recently, I am particularly interested in end-to-end 3D perception from multiple cameras. My favourite appplications include autonomous driving, indoor robotics. 
+I engage in research within the domains of computer vision and machine learning. My work has been featured in prestigious journals and conferences in these fields, including TPAMI, CVPR, ICCV, ECCV, NIPS, and ICRA. Notably, my research has garnered over 2000 citations as of December 2022, reflecting its significant impact in the academic community.
 
-My research has been published across top-tier computer vision, machine learning and robotic journals and conferences (TPAMI, CVPR, ICCV, ECCV, NIPS, ICRA), and has attracted more than 1000 citations (as of Dec 2020).
+**Internship at NVIDIA**
+
+If you possess a solid foundation in computer vision and machine learning and share a keen enthusiasm for tackling challenges in autonomous driving, please don't hesitate to reach out to me.
 
 **News**
 * Dec 2020: [Open Set Instance Segmentation Code is now online.](https://github.com/trungtpham/open_set_instance_segmentation)
