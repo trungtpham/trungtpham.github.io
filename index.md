@@ -1,6 +1,6 @@
 **Welcome!**
 
-I was born on a tranquil rubber and coffee farm in VietNam, surrounded by the awe-inspiring beauty of nature. My journey into the realm of science and technology began later in life, as I didn't have access to a computer and the internet until I reached the age of 20. Fueled by unwavering determination and an insatiable thirst for knowledge, I set forth on a path of exploration and innovation.
+I was born on a tranquil rubber and coffee farm in VietNam, surrounded by the awe-inspiring beauty of nature. My journey into the realm of science and technology began later in life, as I didn't have access to a computer and the internet until I reached the age of 20. Fueled by determination and a thirst for knowledge, I set forth on a path of exploration and innovation.
 
 Today, I take immense pride in my role as a Senior Scientist at NVIDIA, a renowned company celebrated for its state-of-the-art technology. My journey stands as a testament to the belief that hard work and self-confidence can lead to remarkable success, regardless of one's starting point.
 
@@ -17,6 +17,7 @@ I engage in research within the domains of computer vision and machine learning.
 If you possess a solid foundation in computer vision and machine learning and share a keen enthusiasm for tackling challenges in autonomous driving, please don't hesitate to reach out to me.
 
 **News**
+* Dec 2023: NVAutoNet accepted to WACV 24. [Arxiv](https://arxiv.org/abs/2303.12976). [Video](https://www.youtube.com/watch?v=cPxVhCJ7kyY)
 * Dec 2020: [Open Set Instance Segmentation Code is now online.](https://github.com/trungtpham/open_set_instance_segmentation)
 * May 2020: [Intersection Pose estimation for autonmous driving.](https://www.youtube.com/watch?v=KPLTA4S_3Yo)
 * November 2018: 1 paper accepted to WACV18.
