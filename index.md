@@ -17,6 +17,7 @@ I engage in research within the domains of computer vision and machine learning.
 If you possess a solid foundation in computer vision and machine learning and share a keen enthusiasm for tackling challenges in autonomous driving, please don't hesitate to reach out to me.
 
 **News**
+* April 2024: I am promoted to Principal Scientist at NVIDIA. 
 * Dec 2023: NVAutoNet accepted to WACV 24. [Arxiv](https://arxiv.org/abs/2303.12976). [Video](https://www.youtube.com/watch?v=cPxVhCJ7kyY)
 * Dec 2020: [Open Set Instance Segmentation Code is now online.](https://github.com/trungtpham/open_set_instance_segmentation)
 * May 2020: [Intersection Pose estimation for autonmous driving.](https://www.youtube.com/watch?v=KPLTA4S_3Yo)
