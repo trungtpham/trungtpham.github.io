@@ -19,6 +19,7 @@ If you possess a solid foundation in computer vision and machine learning and sh
 **News**
 * April 2024: I am promoted to Principal Scientist at NVIDIA. 
 * Dec 2023: NVAutoNet accepted to WACV 24. [Arxiv](https://arxiv.org/abs/2303.12976). [Video](https://www.youtube.com/watch?v=cPxVhCJ7kyY)
+* May 2023: DPPD: Deformable polar polygon object detection accepted to CVPRW 23.  [PDF] (https://openaccess.thecvf.com/content/CVPR2023W/WAD/papers/Zheng_DPPD_Deformable_Polar_Polygon_Object_Detection_CVPRW_2023_paper.pdf)
 * Dec 2020: [Open Set Instance Segmentation Code is now online.](https://github.com/trungtpham/open_set_instance_segmentation)
 * May 2020: [Intersection Pose estimation for autonmous driving.](https://www.youtube.com/watch?v=KPLTA4S_3Yo)
 * November 2018: 1 paper accepted to WACV18.
