@@ -12,10 +12,6 @@ Prior to my time at NVIDIA, I conducted research at the Australian Centre of Rob
 
 I engage in research within the domains of computer vision and machine learning. My work has been featured in prestigious journals and conferences in these fields, including TPAMI, CVPR, ICCV, ECCV, NIPS, and ICRA. Notably, my research has garnered over 2000 citations as of December 2022, reflecting its significant impact in the academic community.
 
-**Internship at NVIDIA**
-
-If you possess a solid foundation in computer vision and machine learning and share a keen enthusiasm for tackling challenges in autonomous driving, please don't hesitate to reach out to me.
-
 **News**
 * April 2024: I am promoted to Principal Scientist at NVIDIA. 
 * Dec 2023: NVAutoNet accepted to WACV 24. [Arxiv](https://arxiv.org/abs/2303.12976). [Video](https://www.youtube.com/watch?v=cPxVhCJ7kyY)
