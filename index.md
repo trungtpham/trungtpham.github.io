@@ -4,7 +4,7 @@ I was born on a tranquil rubber and coffee farm in VietNam, surrounded by the aw
 
 Today, I take immense pride in my role as a Principal Scientist at NVIDIA, a renowned company celebrated for its state-of-the-art technology. My journey stands as a testament to the belief that hard work and self-confidence can lead to remarkable success, regardless of one's starting point.
 
-My work at NVIDIA revolves around enabling vehicles to drive autonomously. Collaborating with a talented team of scientists and engineers, we are dedicated to pioneering and developing real-time machine learning models and algorithms for 4D visual perception, which aids in the advancement of self-driving technology.
+At NVIDIA, I work on cutting-edge technologies that empower vehicles to navigate autonomously. In particular, I focus on BEV perception, online mapping, and end-to-end models for autonomous driving.
 
 Prior to my time at NVIDIA, I conducted research at the Australian Centre of Robotic Vision and earned my PhD in Computer Vision from the University of Adelaide in 2014. In 2013, I had the privilege of being one of 200 young researchers from around the world invited to a prestigious event known as the Heidelberg Laureate Forum. In 2012, Google recognized my contributions to computer vision with a special scholarship.
 
