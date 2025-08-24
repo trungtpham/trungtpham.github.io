@@ -1,16 +1,8 @@
 **Welcome!**
 
-I was born on a tranquil rubber and coffee farm in VietNam, surrounded by the awe-inspiring beauty of nature. My journey into the realm of science and technology began later in life, as I didn't have access to a computer and the internet until I reached the age of 20. Fueled by determination and a thirst for knowledge, I set forth on a path of exploration and innovation.
+I’m a Principal Scientist at NVIDIA, driving research and productization of LLMs, VLMs, and VLAs to tackle real-world challenges in autonomous driving. My work focuses on BEV perception, online mapping, end-to-end self-driving models, and large-scale synthetic data generation, bridging cutting-edge AI with deployable vehicle systems.
 
-Today, I take immense pride in my role as a Principal Scientist at NVIDIA, a renowned company celebrated for its state-of-the-art technology. My journey stands as a testament to the belief that hard work and self-confidence can lead to remarkable success, regardless of one's starting point.
-
-At NVIDIA, I work on cutting-edge technologies that empower vehicles to navigate autonomously. In particular, I focus on BEV perception, online mapping, and end-to-end models for autonomous driving.
-
-Prior to my time at NVIDIA, I conducted research at the Australian Centre of Robotic Vision and earned my PhD in Computer Vision from the University of Adelaide in 2014. In 2013, I had the privilege of being one of 200 young researchers from around the world invited to a prestigious event known as the Heidelberg Laureate Forum. In 2012, Google recognized my contributions to computer vision with a special scholarship.
-
-**Research**
-
-I engage in research within the domains of computer vision and machine learning. My work has been featured in prestigious journals and conferences in these fields, including TPAMI, CVPR, ICCV, ECCV, NIPS, and ICRA. Notably, my research has garnered over 2000 citations as of December 2022, reflecting its significant impact in the academic community.
+I earned my PhD in Computer Vision at the University of Adelaide and conducted research at the Australian Centre of Robotic Vision. My contributions have been recognized with a Google Scholarship (2012) and an invitation to the Heidelberg Laureate Forum (2013).
 
 **News**
 * April 2024: I am promoted to Principal Scientist at NVIDIA. 
