@@ -93,7 +93,12 @@ body::before {
   background: url("../img/bg-scene.svg") center / cover no-repeat;
 }
 body::after {
+  /* Layer order: humanoid on top of the robotaxi on top of the two
+     ambient green sensor-glow gradients. Positions are in viewport
+     percentages so the composition holds up across screen sizes. */
   background:
+    url("../img/humanoid.png") 86% 60% / auto 30vh no-repeat,
+    url("../img/robotaxi.png") 12% 92% / auto 12vh no-repeat,
     radial-gradient(60rem 44rem at 8% -6%,
       color-mix(in oklab, var(--accent) 24%, transparent) 0%,
       transparent 55%),
@@ -108,6 +113,8 @@ body::after {
 }
 [data-theme="light"] body::after {
   background:
+    url("../img/humanoid.png") 86% 60% / auto 30vh no-repeat,
+    url("../img/robotaxi.png") 12% 92% / auto 12vh no-repeat,
     radial-gradient(60rem 44rem at 8% -6%,
       color-mix(in oklab, var(--accent) 30%, transparent) 0%,
       transparent 55%),
