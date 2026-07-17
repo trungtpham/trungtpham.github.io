@@ -71,13 +71,15 @@ body {
 }
 
 /* ---------- Ambient technical background ----------
-   Layered non-interactive backdrop evoking the visual language of
-   Physical AI: perception, mapping, vision.
-     - body::before  = crosshair grid (thin lines + dot at each intersection),
-                       reads as BEV / camera pixel mesh / point cloud lattice.
-     - body::after   = NVIDIA-green ambient glow (upper-left "sensor" light,
-                       plus a soft counter-glow at bottom-right).
-   Fixed to the viewport, behind all content, theme-aware, hidden in print.
+   A "Physical AI system diagram" laid across the viewport:
+     - body::before = SVG scene (assets/img/bg-scene.svg) with lidar sweep,
+                      transformer attention, MLP graph, robotic arm, BEV
+                      trajectory, and an agent decision tree, connected by
+                      dotted data-flow lines. Rendered in white; the light
+                      theme inverts it to dark ink.
+     - body::after  = NVIDIA-green ambient glows anchored at the sensor
+                      origin (top-left) and the agent (bottom-right).
+   Fixed behind all content, theme-aware, hidden in print / high-contrast.
 ------------------------------------------------------ */
 body::before,
 body::after {
@@ -88,37 +90,29 @@ body::after {
   z-index: -1;
 }
 body::before {
-  --dot:  color-mix(in oklab, var(--text) 22%, transparent);
-  --line: color-mix(in oklab, var(--text) 8%,  transparent);
-  background-image:
-    radial-gradient(circle at center, var(--dot) 1.4px, transparent 1.6px),
-    linear-gradient(to right,  var(--line) 1px, transparent 1px),
-    linear-gradient(to bottom, var(--line) 1px, transparent 1px);
-  background-size: 44px 44px, 44px 44px, 44px 44px;
-  background-position: 0 0, 0 0, 0 0;
-  -webkit-mask-image: radial-gradient(ellipse 120% 100% at 50% 45%, #000 55%, transparent 100%);
-          mask-image: radial-gradient(ellipse 120% 100% at 50% 45%, #000 55%, transparent 100%);
+  background: url("../img/bg-scene.svg") center / cover no-repeat;
 }
 body::after {
   background:
-    radial-gradient(60rem 44rem at 8% -8%,
-      color-mix(in oklab, var(--accent) 35%, transparent) 0%,
+    radial-gradient(60rem 44rem at 8% -6%,
+      color-mix(in oklab, var(--accent) 24%, transparent) 0%,
       transparent 55%),
-    radial-gradient(36rem 28rem at 108% 110%,
-      color-mix(in oklab, var(--accent) 18%, transparent) 0%,
+    radial-gradient(40rem 30rem at 108% 110%,
+      color-mix(in oklab, var(--accent) 14%, transparent) 0%,
       transparent 55%);
 }
-[data-theme="dark"] body::before {
-  --dot:  color-mix(in oklab, var(--text) 28%, transparent);
-  --line: color-mix(in oklab, var(--text) 12%, transparent);
+[data-theme="light"] body::before {
+  /* Flip the white-ink SVG to dark ink for the light theme.
+     hue-rotate keeps the accent green looking green after inversion. */
+  filter: invert(1) hue-rotate(180deg);
 }
-[data-theme="dark"] body::after {
+[data-theme="light"] body::after {
   background:
-    radial-gradient(60rem 44rem at 8% -8%,
-      color-mix(in oklab, var(--accent) 22%, transparent) 0%,
+    radial-gradient(60rem 44rem at 8% -6%,
+      color-mix(in oklab, var(--accent) 30%, transparent) 0%,
       transparent 55%),
-    radial-gradient(36rem 28rem at 108% 110%,
-      color-mix(in oklab, var(--accent) 14%, transparent) 0%,
+    radial-gradient(40rem 30rem at 108% 110%,
+      color-mix(in oklab, var(--accent) 18%, transparent) 0%,
       transparent 55%);
 }
 @media print {
