@@ -105,42 +105,46 @@
       <circle cx="820"  cy="170" r="0.9"/>
     </g>
 
-    <!-- ===================== WORLD-MODEL CUBE (top-right, off-axis) ===================== -->
-    <g transform="translate(1310, 300)">
-      <!-- soft glow behind the cube -->
-      <circle cx="15" cy="15" r="130" fill="url(#cGlow)"/>
+    <!-- ===================== WORLD-MODEL GLOBE (top-right, off-axis) ===================== -->
+    <!-- Wireframe globe with latitude / longitude lines and a slight axis tilt.
+         Latitude lines are ellipses whose radii follow R*sin/cos(latitude);
+         longitude lines are vertical ellipses of varying rx to simulate
+         meridians at different rotations. -->
+    <g transform="translate(1310, 320) rotate(-12)">
+      <!-- soft glow behind the globe -->
+      <circle cx="0" cy="0" r="140" fill="url(#cGlow)"/>
 
-      <!-- Rear face (offset for pseudo-isometric depth) -->
-      <path d="M-24 -68 L84 -68 L84 42 L-24 42 Z"
-            class="b" stroke-opacity="0.55" stroke-width="1.25" fill="none"/>
-      <!-- Front face -->
-      <path d="M-66 -30 L66 -30 L66 78 L-66 78 Z"
-            class="b" stroke-opacity="1" stroke-width="1.85" fill="none"/>
-      <!-- Connecting edges -->
-      <g class="b" stroke-opacity="0.8" stroke-width="1.25" fill="none">
-        <line x1="-66" y1="-30" x2="-24" y2="-68"/>
-        <line x1="66"  y1="-30" x2="84"  y2="-68"/>
-        <line x1="66"  y1="78"  x2="84"  y2="42"/>
-        <line x1="-66" y1="78"  x2="-24" y2="42"/>
+      <!-- Sphere silhouette -->
+      <circle cx="0" cy="0" r="76" class="b"
+              stroke-opacity="1" stroke-width="1.9" fill="none"/>
+
+      <!-- Latitude lines -->
+      <g class="b" stroke-opacity="0.7" stroke-width="1" fill="none">
+        <ellipse cx="0" cy="0"   rx="76" ry="13"/>   <!-- equator -->
+        <ellipse cx="0" cy="-26" rx="71" ry="11"/>   <!-- ~20 N -->
+        <ellipse cx="0" cy="26"  rx="71" ry="11"/>   <!-- ~20 S -->
+        <ellipse cx="0" cy="-48" rx="59" ry="8"/>    <!-- ~40 N -->
+        <ellipse cx="0" cy="48"  rx="59" ry="8"/>    <!-- ~40 S -->
+        <ellipse cx="0" cy="-63" rx="42" ry="6"/>    <!-- ~60 N -->
+        <ellipse cx="0" cy="63"  rx="42" ry="6"/>    <!-- ~60 S -->
       </g>
-      <!-- Inner crosshair (hint at internal structure) -->
-      <g class="b" stroke-opacity="0.35" stroke-width="0.75" fill="none">
-        <line x1="0" y1="-30" x2="0" y2="78"/>
-        <line x1="-66" y1="24" x2="66" y2="24"/>
+
+      <!-- Longitude lines (meridians at various rotations, drawn as vertical ellipses) -->
+      <g class="b" stroke-opacity="0.55" stroke-width="1" fill="none">
+        <ellipse cx="0" cy="0" rx="20" ry="76"/>
+        <ellipse cx="0" cy="0" rx="45" ry="76"/>
       </g>
-      <!-- Vertex markers -->
+      <!-- Prime meridian (edge-on: vertical axis line) -->
+      <line x1="0" y1="-76" x2="0" y2="76"
+            class="b" stroke-opacity="0.85" stroke-width="1"/>
+
+      <!-- Poles -->
       <g class="bf" fill-opacity="1">
-        <circle cx="-66" cy="-30" r="2.4"/>
-        <circle cx="66"  cy="-30" r="2.4"/>
-        <circle cx="66"  cy="78"  r="2.4"/>
-        <circle cx="-66" cy="78"  r="2.4"/>
-        <circle cx="-24" cy="-68" r="1.8" fill-opacity="0.7"/>
-        <circle cx="84"  cy="-68" r="1.8" fill-opacity="0.7"/>
-        <circle cx="84"  cy="42"  r="1.8" fill-opacity="0.7"/>
-        <circle cx="-24" cy="42"  r="1.8" fill-opacity="0.7"/>
+        <circle cx="0" cy="-76" r="2.6"/>
+        <circle cx="0" cy="76"  r="2.6"/>
       </g>
     </g>
-    <text x="1310" y="425" class="lbl" text-anchor="middle" fill-opacity="0.6">WORLD MODEL</text>
+    <text x="1310" y="450" class="lbl" text-anchor="middle" fill-opacity="0.6">WORLD MODEL</text>
 
     <!-- ===================== GROUND POINT CLOUD ===================== -->
     <g class="f" fill-opacity="0.55">
