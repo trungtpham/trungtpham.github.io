@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Trung Pham — Resume</title>
+  <meta name="description" content="Resume of Trung Pham — Principal Research Scientist, NVIDIA Cosmos Lab.">
+  <link rel="canonical" href="https://trungtpham.github.io/resume.html">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg:         #ffffff;
+      --text:       #111114;
+      --muted:      #4a4a52;
+      --subtle:     #74747c;
+      --border:     #e4e4e7;
+      --accent:     #76b900;
+      --accent-ink: #4d7a00;
+
+      --font-sans:  'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-serif: 'Instrument Serif', 'Cormorant Garamond', Georgia, serif;
+      --font-mono:  'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-sans);
+      font-size: 11pt;
+      line-height: 1.55;
+      font-feature-settings: "ss01", "cv11";
+    }
+
+    a { color: var(--text); text-decoration: none; border-bottom: 1px solid var(--border); }
+    a:hover { color: var(--accent-ink); border-bottom-color: var(--accent); }
+
+    .page { max-width: 7.4in; margin: 0 auto; padding: 0.65in 0.65in 0.5in; }
+
+    /* ---------- Header ---------- */
+    .hdr {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 1rem;
+      align-items: end;
+      padding-bottom: .7rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .hdr h1 {
+      font-family: var(--font-serif);
+      font-weight: 400;
+      font-size: 36pt;
+      line-height: 1;
+      letter-spacing: -0.02em;
+      margin: 0 0 .25rem;
+    }
+    .hdr .role {
+      font-family: var(--font-mono);
+      font-size: 8.5pt;
+      color: var(--subtle);
+      letter-spacing: 0.02em;
+      margin: 0;
+    }
+    .hdr .role .accent { color: var(--accent-ink); }
+    .hdr .meta {
+      font-family: var(--font-mono);
+      font-size: 8pt;
+      color: var(--muted);
+      text-align: right;
+      line-height: 1.65;
+    }
+    .hdr .meta a { color: var(--muted); border-bottom: none; }
+    .hdr .meta a:hover { color: var(--accent-ink); }
+    .hdr .meta .sep { color: var(--border); padding: 0 .3rem; }
+
+    /* ---------- Bio ---------- */
+    .bio {
+      margin: 1rem 0 0;
+      color: var(--muted);
+      font-size: 10.5pt;
+      line-height: 1.55;
+    }
+    .bio strong { color: var(--text); font-weight: 600; }
+
+    /* ---------- Sections ---------- */
+    section { margin-top: .85rem; }
+    section:first-of-type { margin-top: .6rem; }
+    .sec-h {
+      font-size: 10pt;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-weight: 700;
+      color: var(--text);
+      margin: 0 0 .65rem;
+      padding-bottom: .25rem;
+      border-bottom: 1.5px solid var(--accent);
+    }
+
+    /* ---------- Row (Experience / Education) ---------- */
+    .row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: .15rem 1rem;
+      align-items: baseline;
+      margin-bottom: .55rem;
+    }
+    .row:last-child { margin-bottom: 0; }
+    .row .title { font-weight: 600; color: var(--text); }
+    .row .org   { color: var(--muted); }
+    .row .when {
+      font-family: var(--font-mono);
+      font-size: 8pt;
+      color: var(--subtle);
+      letter-spacing: 0.02em;
+      white-space: nowrap;
+    }
+    .row .desc {
+      grid-column: 1 / -1;
+      color: var(--muted);
+      margin: .15rem 0 0;
+    }
+    .row .desc em { color: var(--text); font-style: italic; }
+    .row .desc strong { color: var(--text); font-weight: 600; }
+
+    /* ---------- Publications ---------- */
+    .pubs { display: grid; gap: .3rem; }
+    .pub { display: grid; grid-template-columns: 1fr auto; gap: .15rem 1rem; align-items: baseline; }
+    .pub .ti { color: var(--text); font-weight: 500; }
+    .pub .me { color: var(--text); font-weight: 600; border-bottom: 1px dotted var(--accent); }
+    .pub .au { grid-column: 1 / -1; color: var(--muted); font-size: 9.8pt; margin-top: .05rem; }
+    .pub .au .ven { font-style: italic; color: var(--text); }
+    .pub .yr {
+      font-family: var(--font-mono);
+      font-size: 8pt;
+      color: var(--subtle);
+      letter-spacing: 0.02em;
+    }
+
+    /* ---------- Inline lists ---------- */
+    .inline {
+      color: var(--muted);
+      margin: 0;
+    }
+    .inline strong { color: var(--text); font-weight: 600; }
+
+    /* ---------- Awards / Honors ---------- */
+    .awards {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: .35rem;
+    }
+    .awards li {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 1rem;
+      align-items: baseline;
+      color: var(--muted);
+    }
+    .awards .aw-t { color: var(--text); }
+    .awards .aw-t strong { font-weight: 600; }
+    .awards .aw-y {
+      font-family: var(--font-mono);
+      font-size: 8.5pt;
+      color: var(--subtle);
+      letter-spacing: 0.02em;
+      white-space: nowrap;
+    }
+
+    .kv { display: grid; grid-template-columns: 5.6rem 1fr; gap: .35rem .75rem; color: var(--muted); }
+    .kv .k {
+      font-family: var(--font-mono);
+      font-size: 7.8pt;
+      color: var(--subtle);
+      padding-top: .18rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .nvg { color: var(--accent-ink); }
+
+    @page { size: Letter; margin: 0.55in 0.6in 0.55in; }
+    @media print {
+      html, body { background: #ffffff; }
+      .page { max-width: none; margin: 0; padding: 0; }
+      a { color: var(--text); border-bottom: none; }
+      a[href]:after { content: ""; }
+      /* Keep individual entries atomic, but let sections flow across pages
+         so we don't strand whole blocks and leave bottoms blank. */
+      .row, .pub { break-inside: avoid; page-break-inside: avoid; }
+      .sec-h { break-after: avoid-page; page-break-after: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <!-- ====================  HEADER  ==================== -->
+    <header class="hdr">
+      <div>
+        <h1>Trung Pham</h1>
+        <p class="role">Principal Research Scientist · <a href="https://research.nvidia.com/labs/cosmos-lab/"><span class="accent">NVIDIA — Cosmos Lab</span></a> · Santa Clara, CA</p>
+      </div>
+      <div class="meta">
+        <a href="mailto:trungp@nvidia.com">trungp@nvidia.com</a><span class="sep">·</span><a href="mailto:trung.ptt@gmail.com">trung.ptt@gmail.com</a><br>
+        <a href="https://trungtpham.github.io/">trungtpham.github.io</a><span class="sep">·</span><a href="https://scholar.google.com.au/citations?user=Rfj56F4AAAAJ&hl=en">Scholar</a><span class="sep">·</span><a href="https://github.com/trungtpham">GitHub</a><span class="sep">·</span><a href="https://www.linkedin.com/in/trung-pham-39a3aa28/">LinkedIn</a>
+      </div>
+    </header>
+
+    <!-- ====================  BIO  ==================== -->
+    <p class="bio">
+      Principal Research Scientist at <a href="https://research.nvidia.com/labs/cosmos-lab/"><strong>NVIDIA Cosmos Lab</strong></a>, building <strong>world foundation models for Physical AI</strong>. Track record across <strong>research</strong>, <strong>product delivery</strong>, and <strong>technical leadership</strong>. Ph.D. in Computer Vision; <strong>Google PhD Fellow</strong> and <strong>Heidelberg Laureate Forum</strong> delegate.
+    </p>
+
+    <!-- ====================  EXPERIENCE  ==================== -->
+    <section>
+      <h2 class="sec-h">Experience</h2>
+
+      <div class="row">
+        <div><span class="title">Principal Research Scientist</span><span class="org"> — NVIDIA, <a href="https://research.nvidia.com/labs/cosmos-lab/"><span class="nvg">Cosmos Lab</span></a></span></div>
+        <div class="when">2026 — Present</div>
+        <p class="desc">World foundation models for Physical AI. Co-author on <a href="https://research.nvidia.com/labs/cosmos-lab/cosmos3/"><strong>Cosmos World Model</strong></a>.</p>
+      </div>
+
+      <div class="row">
+        <div><span class="title">Principal Engineer</span><span class="org"> — NVIDIA, <a href="https://www.nvidia.com/en-us/solutions/autonomous-vehicles/drive-av/">Autonomous Vehicles</a></span></div>
+        <div class="when">2024 — 2026</div>
+        <p class="desc">Led BEV perception and online mapping. Designed and shipped <strong>BEV camera perception</strong>, <strong>online mapping</strong>, and <strong>path perception</strong> into NVIDIA's autonomous driving stack. First author of <strong>NVAutoNet</strong> (WACV 2024).</p>
+      </div>
+
+      <div class="row">
+        <div><span class="title">Senior Computer Vision Scientist</span><span class="org"> — NVIDIA, <a href="https://www.nvidia.com/en-us/solutions/autonomous-vehicles/drive-av/">Autonomous Vehicles</a></span></div>
+        <div class="when">2018 — 2024</div>
+        <p class="desc">Designed and shipped core perception models (lanes, roads, intersections, objects, lights, signs) for NVIDIA's production AV stack.</p>
+      </div>
+
+      <div class="row">
+        <div><span class="title">Postdoctoral Research Fellow</span><span class="org"> — Australian Centre for Robotic Vision, University of Adelaide</span></div>
+        <div class="when">2014 — 2018</div>
+        <p class="desc">Research on 3D scene understanding and instance segmentation. Core team member on the <strong>1st-place</strong> entry at the <strong>2017 Amazon Robotics Challenge</strong>.</p>
+      </div>
+
+      <div class="row">
+        <div><span class="title">Software Engineering Intern</span><span class="org"> — Google</span></div>
+        <div class="when">Aug — Oct 2013</div>
+        <p class="desc">Efficient placement algorithms for a global storage system.</p>
+      </div>
+    </section>
+
+    <!-- ====================  EDUCATION  ==================== -->
+    <section>
+      <h2 class="sec-h">Education</h2>
+      <div class="row">
+        <div><span class="title">Ph.D., Computer Vision</span><span class="org"> — The University of Adelaide</span></div>
+        <div class="when">2010 — 2014</div>
+        <p class="desc">Computer Vision, Machine Learning. <strong>Google PhD Fellow.</strong> <strong>Dean's Commendation for Doctoral Thesis Excellence.</strong></p>
+      </div>
+      <div class="row">
+        <div><span class="title">M.Eng., Computer Engineering</span><span class="org"> — Chonnam National University</span></div>
+        <div class="when">2008 — 2010</div>
+        <p class="desc"><span class="nvg">Brain Korea 21</span> Scholar.</p>
+      </div>
+      <div class="row">
+        <div><span class="title">B.Sc., Mathematics and Computer Science</span><span class="org"> — Vietnam National University, HCMC</span></div>
+        <div class="when">&nbsp;</div>
+      </div>
+    </section>
+
+    <!-- ====================  HONORS  ==================== -->
+    <section>
+      <h2 class="sec-h">Honors</h2>
+      <ul class="awards">
+        <li><span class="aw-t"><strong>1st place</strong>, Amazon Robotics Challenge (ACRV team)</span><span class="aw-y">2017</span></li>
+        <li><span class="aw-t">Dean's Commendation for Doctoral Thesis Excellence, Adelaide</span><span class="aw-y">2014</span></li>
+        <li><span class="aw-t">Invited delegate, <strong>Heidelberg Laureate Forum</strong></span><span class="aw-y">2013</span></li>
+        <li><span class="aw-t"><strong>Google PhD Fellowship</strong> in Computer Vision</span><span class="aw-y">2012</span></li>
+        <li><span class="aw-t">Adelaide Scholarships International</span><span class="aw-y">2010 — 2014</span></li>
+        <li><span class="aw-t">Brain Korea 21 Scholarship</span><span class="aw-y">2008 — 2009</span></li>
+      </ul>
+    </section>
+
+    <!-- ====================  SKILLS  ==================== -->
+    <section>
+      <h2 class="sec-h">Skills</h2>
+      <div class="kv">
+        <span class="k">Expertise</span>
+        <span>World foundation models · VLM · VLA · video generation &amp; simulation · radar simulation · BEV perception · online mapping · end-to-end autonomous driving · 3D scene understanding · semantic segmentation · object detection · motion estimation · robust estimation.</span>
+        <span class="k">Stack</span>
+        <span>Python · PyTorch · C++ · SLURM · large-scale distributed training.</span>
+        <span class="k">Leadership</span>
+        <span>Technical lead · mentoring scientists and PhD interns · cross-functional teams.</span>
+      </div>
+    </section>
+
+    <!-- ====================  PUBLICATIONS  ==================== -->
+    <section>
+      <h2 class="sec-h">Selected Publications</h2>
+      <div class="pubs">
+        <div class="pub">
+          <span class="ti"><a href="https://research.nvidia.com/labs/cosmos-lab/cosmos3/technical-report.pdf">Cosmos 3: Omnimodal World Models for Physical AI</a></span>
+          <span class="yr">2026</span>
+          <span class="au">NVIDIA. <span class="ven">NVIDIA Technical Report</span>.</span>
+        </div>
+        <div class="pub">
+          <span class="ti">World Simulation with Video Foundation Models for Physical AI</span>
+          <span class="yr">2025</span>
+          <span class="au">NVIDIA. <span class="ven">arXiv:2511.00062</span>.</span>
+        </div>
+        <div class="pub">
+          <span class="ti">NVAutoNet: Fast and Accurate 360° 3D Visual Perception for Self-Driving</span>
+          <span class="yr">2024</span>
+          <span class="au"><span class="me">T. Pham</span>, M. Maghoumi, et al. <span class="ven">WACV 2024</span>.</span>
+        </div>
+        <div class="pub">
+          <span class="ti">Bayesian Semantic Instance Segmentation in Open Set World</span>
+          <span class="yr">2018</span>
+          <span class="au"><span class="me">T. Pham</span>, V. B. G. Kumar, T.-T. Do, G. Carneiro, I. Reid. <span class="ven">ECCV 2018</span>.</span>
+        </div>
+        <div class="pub">
+          <span class="ti">Cartman: The Low-Cost Cartesian Manipulator that Won the Amazon Robotics Challenge</span>
+          <span class="yr">2018</span>
+          <span class="au">D. Morrison, …, <span class="me">T. Pham</span>, et&nbsp;al. <span class="ven">ICRA 2018</span>.</span>
+        </div>
+        <div class="pub">
+          <span class="ti">A Bayesian Data Augmentation Approach for Learning Deep Models</span>
+          <span class="yr">2017</span>
+          <span class="au">T. Tran, <span class="me">T. Pham</span>, G. Carneiro, L. Palmer, I. Reid. <span class="ven">NeurIPS 2017</span>.</span>
+        </div>
+        <div class="pub">
+          <span class="ti">Meaningful Maps — Object-Oriented Semantic Mapping</span>
+          <span class="yr">2017</span>
+          <span class="au">N. Sünderhauf, <span class="me">T. Pham</span>, Y. Latif, M. Milford, I. Reid. <span class="ven">IROS 2017</span>.</span>
+        </div>
+        <div class="pub">
+          <span class="ti">Efficient Point Process Inference for Large-Scale Object Detection</span>
+          <span class="yr">2016</span>
+          <span class="au"><span class="me">T. Pham</span>, H. Rezatofighi, T.-J. Chin, I. Reid. <span class="ven">CVPR 2016</span>.</span>
+        </div>
+        <div class="pub">
+          <span class="ti">The Random Cluster Model for Robust Geometric Fitting</span>
+          <span class="yr">2013</span>
+          <span class="au"><span class="me">T. Pham</span>, T.-J. Chin, J. Yu, D. Suter. <span class="ven">IEEE TPAMI 2013</span>.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================  SERVICE  ==================== -->
+    <section>
+      <h2 class="sec-h">Service</h2>
+      <p class="inline">
+        Reviewer for top-tier computer vision, machine learning, and robotics venues —
+        <strong>CVPR</strong>, <strong>ICCV</strong>, <strong>ECCV</strong>, <strong>NeurIPS</strong>,
+        <strong>ICRA</strong>, <strong>IROS</strong>, <strong>IEEE TPAMI</strong>, and <strong>IEEE TIP</strong>.
+      </p>
+    </section>
+
+  </div>
+</body>
+</html>
