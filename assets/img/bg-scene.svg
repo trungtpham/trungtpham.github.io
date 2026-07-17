@@ -5,10 +5,8 @@
 
     Top-left     : Lidar / radar sweep (Perception, autonomous driving)
     Top-right    : Transformer attention matrix (LLMs)
-    Center       : Neural network / MLP (Machine learning)
     Middle-right : Robotic arm kinematic chain (Robotics)
     Bottom-left  : BEV road with planned trajectory (Autonomous driving)
-    Bottom-right : Agent decision tree with an active node (AI agents)
     Everywhere   : BEV grid + point-cloud dots + soft dotted flow lines
                    connecting the motifs (data flow across the stack).
 
@@ -77,14 +75,12 @@
       <circle cx="1180" cy="740" r="1.2"/>
     </g>
 
-    <!-- Dotted flow lines between motifs (perception -> LLM -> agent -> action -> env) -->
+    <!-- Dotted flow lines between motifs (perception -> LLM -> action -> environment) -->
     <g class="s" stroke-opacity="0.22" stroke-width="1" stroke-dasharray="3 6"
        fill="none" marker-end="url(#arrow)">
       <path d="M340 240 Q700 130 1180 200"/>              <!-- lidar -> attention -->
-      <path d="M1310 320 Q1050 380 500 500"/>             <!-- attention -> MLP -->
-      <path d="M400 560 Q820 620 1200 620"/>              <!-- MLP -> robot arm -->
-      <path d="M1240 700 Q950 800 1140 830"/>             <!-- robot -> agent tree -->
-      <path d="M1100 900 Q680 940 320 880"/>              <!-- agent -> trajectory -->
+      <path d="M1310 320 Q1360 420 1300 490"/>            <!-- attention -> robot arm -->
+      <path d="M1240 720 Q800 820 340 830"/>              <!-- robot arm -> trajectory -->
     </g>
 
     <!-- ==================== TOP-LEFT : LIDAR SWEEP ==================== -->
@@ -160,44 +156,6 @@
       </g>
     </g>
 
-    <!-- ==================== MIDDLE-LEFT : NEURAL NET / MLP ==================== -->
-    <g transform="translate(180, 520)">
-      <text x="0" y="-16" class="lbl">TRANSFORMER</text>
-      <g class="s" stroke-opacity="0.22" stroke-width="0.8">
-        <!-- Layer 1 -> 2 -->
-        <line x1="0"  y1="0"  x2="90" y2="-20"/>
-        <line x1="0"  y1="0"  x2="90" y2="30"/>
-        <line x1="0"  y1="0"  x2="90" y2="80"/>
-        <line x1="0"  y1="35" x2="90" y2="-20"/>
-        <line x1="0"  y1="35" x2="90" y2="30"/>
-        <line x1="0"  y1="35" x2="90" y2="80"/>
-        <line x1="0"  y1="70" x2="90" y2="-20"/>
-        <line x1="0"  y1="70" x2="90" y2="30"/>
-        <line x1="0"  y1="70" x2="90" y2="80"/>
-        <line x1="0"  y1="105" x2="90" y2="-20"/>
-        <line x1="0"  y1="105" x2="90" y2="30"/>
-        <line x1="0"  y1="105" x2="90" y2="80"/>
-        <!-- Layer 2 -> 3 -->
-        <line x1="90" y1="-20" x2="180" y2="15"/>
-        <line x1="90" y1="-20" x2="180" y2="55"/>
-        <line x1="90" y1="30"  x2="180" y2="15"/>
-        <line x1="90" y1="30"  x2="180" y2="55"/>
-        <line x1="90" y1="80"  x2="180" y2="15"/>
-        <line x1="90" y1="80"  x2="180" y2="55"/>
-      </g>
-      <g class="f" fill-opacity="0.55">
-        <circle cx="0"  cy="0"    r="3.5"/>
-        <circle cx="0"  cy="35"   r="3.5"/>
-        <circle cx="0"  cy="70"   r="3.5"/>
-        <circle cx="0"  cy="105"  r="3.5"/>
-        <circle cx="90" cy="-20"  r="3.5"/>
-        <circle cx="90" cy="30"   r="3.5"/>
-        <circle cx="90" cy="80"   r="3.5"/>
-        <circle cx="180" cy="15"  r="3.5"/>
-        <circle cx="180" cy="55"  r="3.5"/>
-      </g>
-    </g>
-
     <!-- ==================== MIDDLE-RIGHT : ROBOT ARM ==================== -->
     <g transform="translate(1240, 500)">
       <text x="0" y="-16" class="lbl">ACTION</text>
@@ -245,40 +203,12 @@
       <rect x="28" y="190" width="24" height="16" rx="2" class="bf" fill-opacity="0.75"/>
     </g>
 
-    <!-- ==================== BOTTOM-RIGHT : AGENT DECISION TREE ==================== -->
-    <g transform="translate(1080, 800)">
-      <text x="0" y="-18" class="lbl">AGENT</text>
-      <g class="s" stroke-opacity="0.32" stroke-width="1">
-        <line x1="100" y1="0"  x2="30"  y2="60"/>
-        <line x1="100" y1="0"  x2="100" y2="60"/>
-        <line x1="100" y1="0"  x2="170" y2="60"/>
-        <line x1="30"  y1="60" x2="0"   y2="120"/>
-        <line x1="30"  y1="60" x2="60"  y2="120"/>
-        <line x1="170" y1="60" x2="140" y2="120"/>
-        <line x1="170" y1="60" x2="200" y2="120"/>
-      </g>
-      <g class="f" fill-opacity="0.5">
-        <circle cx="100" cy="0"   r="4.5"/>
-        <circle cx="30"  cy="60"  r="3.5"/>
-        <circle cx="170" cy="60"  r="3.5"/>
-        <circle cx="0"   cy="120" r="3"/>
-        <circle cx="60"  cy="120" r="3"/>
-        <circle cx="140" cy="120" r="3"/>
-        <circle cx="200" cy="120" r="3"/>
-      </g>
-      <!-- active reasoning node (accent green) -->
-      <circle cx="100" cy="60" r="5" class="bf" fill-opacity="0.95"/>
-      <g class="b" stroke-opacity="0.9" stroke-width="1">
-        <line x1="100" y1="0"  x2="100" y2="60"/>
-        <line x1="100" y1="60" x2="60"  y2="120"/>
-      </g>
-    </g>
-
     <!-- ==================== FLOATING DETECTION BBOXES ==================== -->
     <g class="s" stroke-opacity="0.28" stroke-width="1.3" stroke-dasharray="6 5" fill="none">
       <rect x="640"  y="180" width="130" height="82" rx="2"/>
       <rect x="800"  y="560" width="110" height="70" rx="2"/>
       <rect x="440"  y="420" width="90"  height="58" rx="2"/>
+      <rect x="1060" y="820" width="150" height="96" rx="2"/>
     </g>
   </g>
 </svg>
