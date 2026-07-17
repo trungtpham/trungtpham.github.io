@@ -1,214 +1,208 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  Ambient background for trungtpham.github.io
-  Composition: a subtle "Physical AI system diagram" laid across the viewport.
+  Ambient background for trungtpham.github.io — "World Model Horizon".
 
-    Top-left     : Lidar / radar sweep (Perception, autonomous driving)
-    Top-right    : Transformer attention matrix (LLMs)
-    Middle-right : Robotic arm kinematic chain (Robotics)
-    Bottom-left  : BEV road with planned trajectory (Autonomous driving)
-    Everywhere   : BEV grid + point-cloud dots + soft dotted flow lines
-                   connecting the motifs (data flow across the stack).
+  A cinematic single-image composition:
+    * a perspective ground grid receding from the viewer to a horizon
+    * a bright green horizon line and glow
+    * a wireframe cube floating above the horizon (the "world model")
+    * a green planned trajectory arcing from the foreground up to the cube
+    * lidar sweeps radiating from the ego position at the bottom
+    * point-cloud dots on the ground plane (denser near mid-distance)
+    * a few dashed detection bounding boxes at varying depths
+    * subtle "sky" particles above the horizon
 
-  Rendered in white so it composes on any dark background; the CSS uses
-  `filter: invert(1) hue-rotate(180deg)` on the light theme to flip it.
+  Rendered in white + green so it composes on any dark background; the
+  CSS uses `filter: invert(1) hue-rotate(180deg)` in the light theme
+  to flip it to dark ink while keeping the green highlights green.
 -->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000"
      preserveAspectRatio="xMidYMid slice" aria-hidden="true">
   <defs>
-    <!-- Radial edge vignette (fades the pattern away from the center) -->
-    <radialGradient id="fade" cx="50%" cy="50%" r="72%">
+    <!-- Soft radial vignette that focuses attention on the horizon -->
+    <radialGradient id="fade" cx="50%" cy="45%" r="72%">
       <stop offset="0%"   stop-color="#fff" stop-opacity="1"/>
-      <stop offset="55%"  stop-color="#fff" stop-opacity="0.92"/>
+      <stop offset="60%"  stop-color="#fff" stop-opacity="0.9"/>
       <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
     </radialGradient>
     <mask id="vignette">
       <rect width="100%" height="100%" fill="url(#fade)"/>
     </mask>
 
-    <!-- BEV grid: thin cross-hair lines every 64px -->
-    <pattern id="grid" width="64" height="64" patternUnits="userSpaceOnUse">
-      <path d="M64 0 L0 0 0 64" fill="none"
-            stroke="#fff" stroke-opacity="0.06" stroke-width="1"/>
-    </pattern>
-    <!-- Dot at each grid intersection -->
-    <pattern id="gridDots" x="32" y="32" width="64" height="64" patternUnits="userSpaceOnUse">
-      <circle cx="0" cy="0" r="1.1" fill="#fff" fill-opacity="0.28"/>
-    </pattern>
-
-    <!-- Directional-arrow marker for the flow lines between motifs -->
-    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
-            markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-      <path d="M0 0 L10 5 L0 10 z" fill="#fff" fill-opacity="0.35"/>
-    </marker>
+    <!-- Broad horizon glow -->
+    <radialGradient id="hGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#9ee600" stop-opacity="0.55"/>
+      <stop offset="35%"  stop-color="#9ee600" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#9ee600" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Tight glow behind the world-model cube -->
+    <radialGradient id="cGlow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%"   stop-color="#9ee600" stop-opacity="0.85"/>
+      <stop offset="55%"  stop-color="#9ee600" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#9ee600" stop-opacity="0"/>
+    </radialGradient>
 
     <style>
       .s   { stroke: #ffffff; fill: none; }
       .f   { fill: #ffffff; }
-      .b   { stroke: #9ee600; }   /* NVIDIA accent (green) */
+      .b   { stroke: #9ee600; }
       .bf  { fill: #9ee600; }
       .lbl { font-family: 'JetBrains Mono', ui-monospace, 'SF Mono', monospace;
-             font-size: 11px; letter-spacing: 0.14em; fill: #fff; fill-opacity: 0.32; }
+             font-size: 11px; letter-spacing: 0.22em;
+             fill: #ffffff; fill-opacity: 0.45; }
     </style>
   </defs>
 
   <g mask="url(#vignette)">
-    <!-- ==================== BASE LAYERS ==================== -->
-    <rect width="100%" height="100%" fill="url(#grid)"/>
-    <rect width="100%" height="100%" fill="url(#gridDots)"/>
 
-    <!-- Ambient point-cloud dots scattered across the scene -->
-    <g class="f" fill-opacity="0.38">
-      <circle cx="380"  cy="260" r="1.2"/>
-      <circle cx="520"  cy="330" r="1.2"/>
-      <circle cx="700"  cy="200" r="1.2"/>
-      <circle cx="880"  cy="380" r="1.2"/>
-      <circle cx="620"  cy="460" r="1.2"/>
-      <circle cx="460"  cy="620" r="1.2"/>
-      <circle cx="720"  cy="720" r="1.2"/>
-      <circle cx="900"  cy="500" r="1.2"/>
-      <circle cx="1000" cy="240" r="1.2"/>
-      <circle cx="820"  cy="840" r="1.2"/>
-      <circle cx="560"  cy="900" r="1.2"/>
-      <circle cx="960"  cy="640" r="1.2"/>
-      <circle cx="1100" cy="420" r="1.2"/>
-      <circle cx="1180" cy="740" r="1.2"/>
+    <!-- ===================== PERSPECTIVE GROUND GRID ===================== -->
+    <!-- Vertical lines converging to the vanishing point at (800, 440) -->
+    <g class="s" stroke-opacity="0.16" stroke-width="1">
+      <line x1="-600" y1="1000" x2="800" y2="440"/>
+      <line x1="-300" y1="1000" x2="800" y2="440"/>
+      <line x1="-50"  y1="1000" x2="800" y2="440"/>
+      <line x1="180"  y1="1000" x2="800" y2="440"/>
+      <line x1="380"  y1="1000" x2="800" y2="440"/>
+      <line x1="560"  y1="1000" x2="800" y2="440"/>
+      <line x1="700"  y1="1000" x2="800" y2="440"/>
+      <line x1="900"  y1="1000" x2="800" y2="440"/>
+      <line x1="1040" y1="1000" x2="800" y2="440"/>
+      <line x1="1220" y1="1000" x2="800" y2="440"/>
+      <line x1="1420" y1="1000" x2="800" y2="440"/>
+      <line x1="1650" y1="1000" x2="800" y2="440"/>
+      <line x1="1900" y1="1000" x2="800" y2="440"/>
+      <line x1="2200" y1="1000" x2="800" y2="440"/>
     </g>
-
-    <!-- Dotted flow lines between motifs (perception -> LLM -> action -> environment) -->
-    <g class="s" stroke-opacity="0.22" stroke-width="1" stroke-dasharray="3 6"
-       fill="none" marker-end="url(#arrow)">
-      <path d="M340 240 Q700 130 1180 200"/>              <!-- lidar -> attention -->
-      <path d="M1310 320 Q1360 420 1300 490"/>            <!-- attention -> robot arm -->
-      <path d="M1240 720 Q800 820 340 830"/>              <!-- robot arm -> trajectory -->
-    </g>
-
-    <!-- ==================== TOP-LEFT : LIDAR SWEEP ==================== -->
-    <g class="s" stroke-opacity="0.18" stroke-width="1">
-      <circle cx="130" cy="110" r="220"/>
-      <circle cx="130" cy="110" r="380"/>
-      <circle cx="130" cy="110" r="540"/>
-      <circle cx="130" cy="110" r="700"/>
-      <circle cx="130" cy="110" r="860"/>
-      <circle cx="130" cy="110" r="1020"/>
-    </g>
-    <!-- Sensor origin marker -->
-    <g class="b" stroke-opacity="0.9" stroke-width="1.4">
-      <circle cx="130" cy="110" r="5" fill="none"/>
-      <line x1="118" y1="110" x2="142" y2="110"/>
-      <line x1="130" y1="98"  x2="130" y2="122"/>
-    </g>
-    <circle cx="130" cy="110" r="2" class="bf" fill-opacity="0.95"/>
-    <text x="150" y="118" class="lbl">PERCEPTION</text>
-
-    <!-- ==================== TOP-RIGHT : TRANSFORMER ATTENTION ==================== -->
-    <g transform="translate(1230, 140)">
-      <text x="0" y="-14" class="lbl">ATTENTION</text>
-      <g class="f">
-        <!-- Row 1 -->
-        <rect x="0"   y="0"  width="22" height="22" fill-opacity="0.48"/>
-        <rect x="26"  y="0"  width="22" height="22" fill-opacity="0.16"/>
-        <rect x="52"  y="0"  width="22" height="22" fill-opacity="0.08"/>
-        <rect x="78"  y="0"  width="22" height="22" fill-opacity="0.05"/>
-        <rect x="104" y="0"  width="22" height="22" fill-opacity="0.05"/>
-        <rect x="130" y="0"  width="22" height="22" fill-opacity="0.09"/>
-        <rect x="156" y="0"  width="22" height="22" fill-opacity="0.05"/>
-        <!-- Row 2 -->
-        <rect x="0"   y="26" width="22" height="22" fill-opacity="0.20"/>
-        <rect x="26"  y="26" width="22" height="22" fill-opacity="0.55"/>
-        <rect x="52"  y="26" width="22" height="22" fill-opacity="0.22"/>
-        <rect x="78"  y="26" width="22" height="22" fill-opacity="0.09"/>
-        <rect x="104" y="26" width="22" height="22" fill-opacity="0.05"/>
-        <rect x="130" y="26" width="22" height="22" fill-opacity="0.07"/>
-        <rect x="156" y="26" width="22" height="22" fill-opacity="0.05"/>
-        <!-- Row 3 -->
-        <rect x="0"   y="52" width="22" height="22" fill-opacity="0.08"/>
-        <rect x="26"  y="52" width="22" height="22" fill-opacity="0.28"/>
-        <rect x="52"  y="52" width="22" height="22" fill-opacity="0.60"/>
-        <rect x="78"  y="52" width="22" height="22" fill-opacity="0.20"/>
-        <rect x="104" y="52" width="22" height="22" fill-opacity="0.08"/>
-        <rect x="130" y="52" width="22" height="22" fill-opacity="0.05"/>
-        <rect x="156" y="52" width="22" height="22" fill-opacity="0.05"/>
-        <!-- Row 4 -->
-        <rect x="0"   y="78" width="22" height="22" fill-opacity="0.05"/>
-        <rect x="26"  y="78" width="22" height="22" fill-opacity="0.10"/>
-        <rect x="52"  y="78" width="22" height="22" fill-opacity="0.28"/>
-        <rect x="78"  y="78" width="22" height="22" fill-opacity="0.58"/>
-        <rect x="104" y="78" width="22" height="22" fill-opacity="0.20"/>
-        <rect x="130" y="78" width="22" height="22" fill-opacity="0.09"/>
-        <rect x="156" y="78" width="22" height="22" fill-opacity="0.05"/>
-        <!-- Row 5 -->
-        <rect x="0"   y="104" width="22" height="22" fill-opacity="0.05"/>
-        <rect x="26"  y="104" width="22" height="22" fill-opacity="0.06"/>
-        <rect x="52"  y="104" width="22" height="22" fill-opacity="0.10"/>
-        <rect x="78"  y="104" width="22" height="22" fill-opacity="0.26"/>
-        <rect x="104" y="104" width="22" height="22" fill-opacity="0.55"/>
-        <rect x="130" y="104" width="22" height="22" fill-opacity="0.22"/>
-        <rect x="156" y="104" width="22" height="22" fill-opacity="0.09"/>
-        <!-- Row 6 -->
-        <rect x="0"   y="130" width="22" height="22" fill-opacity="0.05"/>
-        <rect x="26"  y="130" width="22" height="22" fill-opacity="0.05"/>
-        <rect x="52"  y="130" width="22" height="22" fill-opacity="0.06"/>
-        <rect x="78"  y="130" width="22" height="22" fill-opacity="0.10"/>
-        <rect x="104" y="130" width="22" height="22" fill-opacity="0.28"/>
-        <rect x="130" y="130" width="22" height="22" fill-opacity="0.60"/>
-        <rect x="156" y="130" width="22" height="22" fill-opacity="0.22"/>
-      </g>
+    <!-- Horizontal receding lines (spacing compressed near horizon) -->
+    <g class="s" stroke-opacity="0.14" stroke-width="1">
+      <line x1="0" y1="452"  x2="1600" y2="452"/>
+      <line x1="0" y1="468"  x2="1600" y2="468"/>
+      <line x1="0" y1="492"  x2="1600" y2="492"/>
+      <line x1="0" y1="525"  x2="1600" y2="525"/>
+      <line x1="0" y1="575"  x2="1600" y2="575"/>
+      <line x1="0" y1="645"  x2="1600" y2="645"/>
+      <line x1="0" y1="745"  x2="1600" y2="745"/>
+      <line x1="0" y1="880"  x2="1600" y2="880"/>
     </g>
 
-    <!-- ==================== MIDDLE-RIGHT : ROBOT ARM ==================== -->
-    <g transform="translate(1240, 500)">
-      <text x="0" y="-16" class="lbl">ACTION</text>
-      <!-- Base -->
-      <g class="s" stroke-opacity="0.55" stroke-width="2" stroke-linecap="round">
-        <line x1="-10" y1="140" x2="70" y2="140"/>
-      </g>
-      <!-- Kinematic chain -->
-      <g class="s" stroke-opacity="0.5" stroke-width="2.5" stroke-linecap="round">
-        <line x1="30" y1="140" x2="30"  y2="80"/>
-        <line x1="30" y1="80"  x2="130" y2="30"/>
-        <line x1="130" y1="30" x2="200" y2="70"/>
-      </g>
-      <!-- Joints -->
-      <g class="f" fill-opacity="0.7">
-        <circle cx="30"  cy="140" r="5"/>
-        <circle cx="30"  cy="80"  r="4"/>
-        <circle cx="130" cy="30"  r="4"/>
-      </g>
-      <!-- End effector / gripper -->
-      <g class="s" stroke-opacity="0.6" stroke-width="1.6" stroke-linecap="round">
-        <path d="M200 70 L214 60"/>
-        <path d="M200 70 L214 80"/>
-      </g>
-      <circle cx="200" cy="70" r="3.5" class="bf" fill-opacity="0.9"/>
+    <!-- ===================== HORIZON ===================== -->
+    <ellipse cx="800" cy="440" rx="700" ry="180" fill="url(#hGlow)"/>
+    <line x1="0" y1="440" x2="1600" y2="440"
+          stroke="#9ee600" stroke-opacity="0.55" stroke-width="1"/>
+
+    <!-- ===================== SKY PARTICLES ===================== -->
+    <g class="f" fill-opacity="0.5">
+      <circle cx="120"  cy="140" r="1"/>
+      <circle cx="260"  cy="220" r="0.9"/>
+      <circle cx="440"  cy="90"  r="1.1"/>
+      <circle cx="590"  cy="200" r="0.9"/>
+      <circle cx="1000" cy="140" r="0.9"/>
+      <circle cx="1140" cy="230" r="1"/>
+      <circle cx="1320" cy="100" r="1"/>
+      <circle cx="1480" cy="200" r="0.9"/>
+      <circle cx="220"  cy="330" r="0.9"/>
+      <circle cx="1420" cy="330" r="0.9"/>
+      <circle cx="820"  cy="170" r="0.9"/>
     </g>
 
-    <!-- ==================== BOTTOM-LEFT : BEV ROAD + PLANNED TRAJECTORY ==================== -->
-    <g transform="translate(140, 760)">
-      <text x="0" y="-10" class="lbl">TRAJECTORY</text>
-      <!-- road edges -->
-      <g class="s" stroke-opacity="0.3" stroke-width="1.4">
-        <path d="M0 130 Q100 70 220 50 T460 30"/>
-        <path d="M0 210 Q100 150 220 130 T460 110"/>
+    <!-- ===================== WORLD-MODEL CUBE (top-right, off-axis) ===================== -->
+    <g transform="translate(1310, 300)">
+      <!-- soft glow behind the cube -->
+      <circle cx="15" cy="15" r="130" fill="url(#cGlow)"/>
+
+      <!-- Rear face (offset for pseudo-isometric depth) -->
+      <path d="M-24 -68 L84 -68 L84 42 L-24 42 Z"
+            class="b" stroke-opacity="0.55" stroke-width="1.25" fill="none"/>
+      <!-- Front face -->
+      <path d="M-66 -30 L66 -30 L66 78 L-66 78 Z"
+            class="b" stroke-opacity="1" stroke-width="1.85" fill="none"/>
+      <!-- Connecting edges -->
+      <g class="b" stroke-opacity="0.8" stroke-width="1.25" fill="none">
+        <line x1="-66" y1="-30" x2="-24" y2="-68"/>
+        <line x1="66"  y1="-30" x2="84"  y2="-68"/>
+        <line x1="66"  y1="78"  x2="84"  y2="42"/>
+        <line x1="-66" y1="78"  x2="-24" y2="42"/>
       </g>
-      <!-- dashed lane center -->
-      <g class="s" stroke-opacity="0.35" stroke-width="1.2" stroke-dasharray="10 8">
-        <path d="M0 170 Q100 110 220 90 T460 70"/>
+      <!-- Inner crosshair (hint at internal structure) -->
+      <g class="b" stroke-opacity="0.35" stroke-width="0.75" fill="none">
+        <line x1="0" y1="-30" x2="0" y2="78"/>
+        <line x1="-66" y1="24" x2="66" y2="24"/>
       </g>
-      <!-- ego planned trajectory (accent green) -->
-      <g class="b" stroke-opacity="0.9" stroke-width="1.8" stroke-dasharray="4 3" fill="none">
-        <path d="M40 200 Q140 145 260 125 T480 100"/>
+      <!-- Vertex markers -->
+      <g class="bf" fill-opacity="1">
+        <circle cx="-66" cy="-30" r="2.4"/>
+        <circle cx="66"  cy="-30" r="2.4"/>
+        <circle cx="66"  cy="78"  r="2.4"/>
+        <circle cx="-66" cy="78"  r="2.4"/>
+        <circle cx="-24" cy="-68" r="1.8" fill-opacity="0.7"/>
+        <circle cx="84"  cy="-68" r="1.8" fill-opacity="0.7"/>
+        <circle cx="84"  cy="42"  r="1.8" fill-opacity="0.7"/>
+        <circle cx="-24" cy="42"  r="1.8" fill-opacity="0.7"/>
       </g>
-      <!-- ego vehicle box -->
-      <rect x="28" y="190" width="24" height="16" rx="2" class="bf" fill-opacity="0.75"/>
+    </g>
+    <text x="1310" y="425" class="lbl" text-anchor="middle" fill-opacity="0.6">WORLD MODEL</text>
+
+    <!-- ===================== GROUND POINT CLOUD ===================== -->
+    <g class="f" fill-opacity="0.55">
+      <!-- distant (small) -->
+      <circle cx="500"  cy="470" r="0.9"/>
+      <circle cx="720"  cy="465" r="0.9"/>
+      <circle cx="900"  cy="470" r="0.9"/>
+      <circle cx="1100" cy="468" r="0.9"/>
+      <!-- far -->
+      <circle cx="430"  cy="530" r="1.1"/>
+      <circle cx="680"  cy="525" r="1.1"/>
+      <circle cx="960"  cy="530" r="1.1"/>
+      <circle cx="1180" cy="530" r="1.1"/>
+      <!-- mid -->
+      <circle cx="360"  cy="640" r="1.4"/>
+      <circle cx="600"  cy="660" r="1.4"/>
+      <circle cx="920"  cy="650" r="1.4"/>
+      <circle cx="1200" cy="640" r="1.4"/>
+      <circle cx="1380" cy="670" r="1.4"/>
+      <!-- close -->
+      <circle cx="180"  cy="760" r="1.7"/>
+      <circle cx="440"  cy="800" r="1.7"/>
+      <circle cx="1080" cy="780" r="1.7"/>
+      <circle cx="1330" cy="800" r="1.7"/>
+      <circle cx="240"  cy="900" r="2"/>
+      <circle cx="540"  cy="920" r="2"/>
+      <circle cx="1000" cy="900" r="2"/>
+      <circle cx="1360" cy="900" r="2"/>
     </g>
 
-    <!-- ==================== FLOATING DETECTION BBOXES ==================== -->
-    <g class="s" stroke-opacity="0.28" stroke-width="1.3" stroke-dasharray="6 5" fill="none">
-      <rect x="640"  y="180" width="130" height="82" rx="2"/>
-      <rect x="800"  y="560" width="110" height="70" rx="2"/>
-      <rect x="440"  y="420" width="90"  height="58" rx="2"/>
-      <rect x="1060" y="820" width="150" height="96" rx="2"/>
+    <!-- ===================== DETECTION BBOXES ===================== -->
+    <g class="s" stroke-opacity="0.32" stroke-width="1.3" stroke-dasharray="5 4" fill="none">
+      <rect x="1030" y="560" width="60" height="42" rx="1"/>
+      <rect x="460"  y="550" width="55" height="38" rx="1"/>
+      <rect x="1170" y="680" width="90" height="60" rx="2"/>
+      <rect x="320"  y="700" width="100" height="70" rx="2"/>
     </g>
+    <!-- Corner brackets on the nearest-left bbox (highlighted "detection") -->
+    <g class="b" stroke-opacity="0.9" stroke-width="1.6" fill="none">
+      <path d="M320 712 L320 700 L332 700"/>
+      <path d="M408 700 L420 700 L420 712"/>
+      <path d="M320 758 L320 770 L332 770"/>
+      <path d="M408 770 L420 770 L420 758"/>
+    </g>
+
+    <!-- ===================== LIDAR SWEEP (from ego at bottom-left) ===================== -->
+    <g class="s" stroke-opacity="0.2" stroke-width="1" fill="none">
+      <ellipse cx="240" cy="1010" rx="200" ry="55"/>
+      <ellipse cx="240" cy="1010" rx="360" ry="95"/>
+      <ellipse cx="240" cy="1010" rx="520" ry="130"/>
+      <ellipse cx="240" cy="1010" rx="700" ry="165"/>
+    </g>
+
+    <!-- ===================== PLANNED TRAJECTORY (bottom-left -> cube) ===================== -->
+    <path d="M240 990 Q380 830 600 720 Q900 570 1250 380"
+          class="b" stroke-opacity="0.85" stroke-width="2.2"
+          stroke-dasharray="7 5" fill="none"/>
+    <!-- Small ego marker at trajectory start -->
+    <circle cx="240" cy="990" r="4.5" class="bf" fill-opacity="0.95"/>
+
+    <!-- ===================== LABELS ===================== -->
+    <text x="60"   y="465" class="lbl">HORIZON</text>
+    <text x="1420" y="965" class="lbl">PHYSICAL AI</text>
   </g>
 </svg>
