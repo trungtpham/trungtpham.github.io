@@ -51,16 +51,77 @@
 
 /* ---------- Reset ---------- */
 *, *::before, *::after { box-sizing: border-box; }
-html { -webkit-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--bg);
+  transition: background-color .25s ease;
+}
 body {
   margin: 0;
-  background: var(--bg);
+  background: transparent;
   color: var(--text);
   font-family: var(--font-sans);
   font-size: 17px;
   line-height: 1.65;
   font-feature-settings: "ss01", "cv11";
-  transition: background-color .25s ease, color .25s ease;
+  transition: color .25s ease;
+  position: relative;
+}
+
+/* ---------- Ambient technical background ----------
+   Two layered, non-interactive layers evoke the visual language of
+   Physical AI: perception, mapping, and vision.
+     - body::before  =  radial dot grid (reads as point cloud / BEV grid / pixel lattice),
+                        gently faded toward the edges via a soft radial mask.
+     - body::after   =  low-opacity NVIDIA-green ambient glow (top-left "sensor" light,
+                        with a faint counter-glow bottom-right).
+   Fixed to the viewport, sit behind all content, respect light/dark themes,
+   and are hidden for print / high-contrast users.
+------------------------------------------------------ */
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+}
+body::before {
+  --dot: color-mix(in oklab, var(--text) 8%, transparent);
+  background-image: radial-gradient(circle at center, var(--dot) 1px, transparent 1.5px);
+  background-size: 22px 22px;
+  background-position: 0 0;
+  -webkit-mask-image: radial-gradient(ellipse 110% 90% at 50% 40%, #000 45%, transparent 100%);
+          mask-image: radial-gradient(ellipse 110% 90% at 50% 40%, #000 45%, transparent 100%);
+}
+body::after {
+  background:
+    radial-gradient(48rem 34rem at 10% -6%,
+      color-mix(in oklab, var(--accent) 20%, transparent) 0%,
+      transparent 60%),
+    radial-gradient(30rem 24rem at 105% 108%,
+      color-mix(in oklab, var(--accent) 10%, transparent) 0%,
+      transparent 55%);
+}
+[data-theme="dark"] body::before {
+  --dot: color-mix(in oklab, var(--text) 9%, transparent);
+}
+[data-theme="dark"] body::after {
+  background:
+    radial-gradient(48rem 34rem at 10% -6%,
+      color-mix(in oklab, var(--accent) 12%, transparent) 0%,
+      transparent 60%),
+    radial-gradient(30rem 24rem at 105% 108%,
+      color-mix(in oklab, var(--accent) 8%, transparent) 0%,
+      transparent 55%);
+}
+@media print {
+  body::before, body::after { display: none; }
+}
+@media (prefers-contrast: more) {
+  body::before, body::after { display: none; }
 }
 ::selection { background: var(--selection-bg); color: var(--selection-fg); }
 
