@@ -93,16 +93,12 @@ body::before {
   background: url("../img/bg-scene.svg") center / cover no-repeat;
 }
 body::after {
-  /* Layer order: humanoid on top of the robotaxi on top of the two
-     ambient green sensor-glow gradients. Positions are in viewport
-     percentages so the composition holds up across screen sizes. */
+  /* Two ambient NVIDIA-green sensor-glow gradients anchored at the
+     top-left "sensor origin" and bottom-right "agent" corners of the
+     viewport. The robotaxi and humanoid are inline <img> elements now
+     (see .ambient-scene below) so we can rotate them precisely with
+     `transform: rotate()`. */
   background:
-    url("../img/humanoid.png?v=20260816b") 88% 62% / auto 30vh no-repeat,
-    /* Robotaxi is a rear-quarter aerial render — the vehicle is yawed in
-       world space so it drives from lower-left toward upper-right, tracking
-       a perspective grid line that converges on the vanishing point at
-       (50%, 44%) in bg-scene.svg. No 2D rotation applied. */
-    url("../img/robotaxi.png?v=20260816b") 5% 94% / auto 20vh no-repeat,
     radial-gradient(60rem 44rem at 8% -6%,
       color-mix(in oklab, var(--accent) 24%, transparent) 0%,
       transparent 55%),
@@ -117,8 +113,6 @@ body::after {
 }
 [data-theme="light"] body::after {
   background:
-    url("../img/humanoid.png?v=20260816b") 88% 62% / auto 30vh no-repeat,
-    url("../img/robotaxi.png?v=20260816b") 5% 94% / auto 20vh no-repeat,
     radial-gradient(60rem 44rem at 8% -6%,
       color-mix(in oklab, var(--accent) 30%, transparent) 0%,
       transparent 55%),
@@ -126,15 +120,63 @@ body::after {
       color-mix(in oklab, var(--accent) 18%, transparent) 0%,
       transparent 55%);
 }
+
+/* ---------- Ambient scene: robotaxi + humanoid ----------
+   Positioned behind all content on top of the bg-scene SVG. Rotation
+   is applied at the display layer via `transform: rotate()`, so we
+   can align the vehicle's heading with the perspective grid without
+   ever having to re-render the PNG.
+
+   Geometry note: the perspective grid in bg-scene.svg converges at
+   (50%, 44%) of the viewport. From the car's anchored position near
+   the bottom-left corner, the ray to that vanishing point makes an
+   angle of ~54° right of vertical, which is close to the car's
+   natural heading in the render (car is yawed ~40° in world space).
+   The small `rotate(-var(--car-yaw))` below fine-tunes the last few
+   degrees of alignment; adjust --car-yaw to nudge left/right. */
+:root {
+  /* Fine-tune to align the car's heading with the perspective grid line
+     passing through its ground position. Negative rotates counter-clockwise
+     (front of car swings to the left → heading becomes more vertical). */
+  --car-yaw: -9deg;
+}
+.ambient-scene {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  overflow: hidden;
+}
+.ambient-car,
+.ambient-humanoid {
+  position: absolute;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+.ambient-car {
+  left: 4%;
+  bottom: 4%;
+  height: 22vh;
+  width: auto;
+  transform: rotate(var(--car-yaw));
+  transform-origin: 50% 80%; /* pivot near the rear axle */
+}
+.ambient-humanoid {
+  right: 6%;
+  top: 32%;
+  height: 30vh;
+  width: auto;
+}
 @media print {
-  body::before, body::after { display: none; }
+  body::before, body::after, .ambient-scene { display: none; }
 }
 @media (prefers-contrast: more) {
-  body::before, body::after { display: none; }
+  body::before, body::after, .ambient-scene { display: none; }
 }
 ::selection { background: var(--selection-bg); color: var(--selection-fg); }
 
 img, svg { max-width: 100%; display: block; }
+.ambient-scene img { max-width: none; }
 
 a {
   color: var(--link);
@@ -293,6 +335,7 @@ a:hover {
   height: 120px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: center 18%;
   border: 1px solid var(--border);
   background: var(--bg-elev);
 }
