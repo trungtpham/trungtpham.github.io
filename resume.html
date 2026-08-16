@@ -128,6 +128,7 @@
     }
     .row .desc em { color: var(--text); font-style: italic; }
     .row .desc strong { color: var(--text); font-weight: 600; }
+    .row .desc + .desc { margin-top: .12rem; }
 
     /* ---------- Publications ---------- */
     .pubs { display: grid; gap: .3rem; }
@@ -187,9 +188,25 @@
 
     .nvg { color: var(--accent-ink); }
 
+    .site-bar {
+      max-width: 7.4in;
+      margin: 0 auto;
+      padding: .7rem 0.65in 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      font-size: 9pt;
+    }
+    .site-bar a { border-bottom: none; color: var(--muted); }
+    .site-bar a:hover { color: var(--accent-ink); }
+    .site-bar .current { color: var(--text); border-bottom: 1px solid var(--accent); }
+    .site-bar .links { display: flex; gap: .85rem; }
+
     @page { size: Letter; margin: 0.55in 0.6in 0.55in; }
     @media print {
       html, body { background: #ffffff; }
+      .site-bar { display: none; }
       .page { max-width: none; margin: 0; padding: 0; }
       a { color: var(--text); border-bottom: none; }
       a[href]:after { content: ""; }
@@ -201,6 +218,15 @@
   </style>
 </head>
 <body>
+  <nav class="site-bar" aria-label="Site">
+    <a href="./">Trung Pham</a>
+    <span class="links">
+      <a href="./">About</a>
+      <a href="publications.html">Publications</a>
+      <a href="resume.html" class="current" aria-current="page">Resume</a>
+      <a href="Trung_Pham_Resume.pdf">PDF</a>
+    </span>
+  </nav>
   <div class="page">
 
     <!-- ====================  HEADER  ==================== -->
@@ -227,7 +253,8 @@
       <div class="row">
         <div><span class="title">Principal Research Scientist</span><span class="org"> — NVIDIA</span></div>
         <div class="when">2018 — Present</div>
-        <p class="desc">World foundation models for Physical AI at <a href="https://research.nvidia.com/labs/cosmos-lab/"><span class="nvg">Cosmos Lab</span></a>. Co-author on <a href="https://research.nvidia.com/labs/cosmos-lab/cosmos3/"><strong>Cosmos World Model</strong></a>. Previously Principal Engineer and Senior Computer Vision Scientist on <a href="https://www.nvidia.com/en-us/solutions/autonomous-vehicles/drive-av/">Autonomous Vehicles</a> — designed and shipped <strong>BEV camera perception</strong>, <strong>online mapping</strong>, <strong>path perception</strong>, and core models (lanes, roads, intersections, objects, lights, signs) into NVIDIA's production AV stack. First author of <strong>NVAutoNet</strong> (WACV 2024).</p>
+        <p class="desc">Build and scale world foundation models for Physical AI — multimodal systems that perceive, simulate, and reason about the physical world.</p>
+        <p class="desc">Technical lead for AV perception — architected and shipped production <strong>BEV</strong> and <strong>camera perception</strong> models into NVIDIA's autonomous driving stack.</p>
       </div>
 
       <div class="row">
