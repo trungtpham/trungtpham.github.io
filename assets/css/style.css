@@ -135,10 +135,10 @@ body::after {
    The small `rotate(-var(--car-yaw))` below fine-tunes the last few
    degrees of alignment; adjust --car-yaw to nudge left/right. */
 :root {
-  /* Fine-tune to align the car's heading with the perspective grid line
-     passing through its ground position. Negative rotates counter-clockwise
-     (front of car swings to the left → heading becomes more vertical). */
-  --car-yaw: -9deg;
+  /* 0deg keeps the car in its rendered 3D pose (no image-plane rotation,
+     no roll artifact). Nudge in small increments (1–3deg) to fine-tune
+     alignment with the perspective grid without introducing visible tilt. */
+  --car-yaw: 0deg;
 }
 .ambient-scene {
   position: fixed;
