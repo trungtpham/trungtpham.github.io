@@ -14,7 +14,7 @@ set -euo pipefail
 
 # ---- Settings ---------------------------------------------------------------
 GIT_USER_NAME="Trung Pham"
-GIT_USER_EMAIL="trung.ptt@gmail.com"      # change to trungp@nvidia.com if preferred
+GIT_USER_EMAIL="trung.ptt@gmail.com"
 REPO_SSH="git@github.com:trungtpham/trungtpham.github.io.git"
 REPO_HTTPS="https://github.com/trungtpham/trungtpham.github.io.git"
 ARCHIVE_BRANCH="legacy-jekyll"
